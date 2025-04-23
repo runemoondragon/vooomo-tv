@@ -1,0 +1,299 @@
+[
+  {
+    "nanoid": "VsWzwNcPM0CvmB",
+    "name": "247 Box",
+    "iptv_urls": [
+      "https://hls.247box.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5t5lIe4q1Hcoav",
+    "name": "AFN Music",
+    "iptv_urls": [
+      "https://bozztv.com/1gbw5/tintv2/tintv2/chunklist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "8de166DRNsy84Z",
+    "name": "AFN TV",
+    "iptv_urls": [
+      "https://bozztv.com/1gbw5/tintv2/tintv2/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "7UH7D0PeeD0PV4",
+    "name": "Asil TV",
+    "iptv_urls": [
+      "https://live.asil.tv/asiltv/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "QoND2rPdsKKROr",
+    "name": "Assirat TV",
+    "iptv_urls": [
+      "https://svs.itworkscdn.net/assiratvlive/assirat/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "tSSDR7KimuYCdS",
+    "name": "AVA Family",
+    "iptv_urls": [
+      "https://familyhls.avatv.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2FlUnahRPoXRU8",
+    "name": "AVA Series",
+    "iptv_urls": [
+      "https://avaserieshls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sM7rYQFLMt6qyU",
+    "name": "Bravo Farsi TV",
+    "iptv_urls": [
+      "https://bravoohls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "UbcScCVh84ELmZ",
+    "name": "FX1 Farsi",
+    "iptv_urls": [
+      "https://fxtvhls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "uaF18Isd4yqViF",
+    "name": "Health Media TV",
+    "iptv_urls": [
+      "https://6n3yowknl9ok-hls-live.5centscdn.com/HMN/271ddf829afeece44d8732757fba1a66.sdp/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "AUxfFZfjCkbWnr",
+    "name": "ITN",
+    "iptv_urls": [
+      "https://itnhls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "r3pcMeCTNiXCm8",
+    "name": "Meta Film TV",
+    "iptv_urls": [
+      "https://metafilmhls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mOhUb3tHaXu2I9",
+    "name": "Mihan TV",
+    "iptv_urls": [
+      "https://iptv.mihantv.com/mihantv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Fz3BVHY47NsCpE",
+    "name": "Negah TV",
+    "iptv_urls": [
+      "https://iptv.negahtv.com/negahtv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "8270gOhpg1nHc1",
+    "name": "Omide Iran",
+    "iptv_urls": [
+      "https://oitnhls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Hq5kvgoL2uBOds",
+    "name": "OXIR TV",
+    "iptv_urls": [
+      "https://hls.oxir.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FG2KLX3wESEY1w",
+    "name": "Pars",
+    "iptv_urls": [
+      "https://parshls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "LpZqaGpazJfCSf",
+    "name": "Payam Javan TV",
+    "iptv_urls": [
+      "https://uni01rtmp.tulix.tv/kensecure/pjtv.stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "G9AYfGVY8dfNSq",
+    "name": "Payvand TV",
+    "iptv_urls": [
+      "https://uni6rtmp.tulix.tv/ucur1/Payvand/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5RbU8G6mNuBZdl",
+    "name": "PBC Tapesh TV",
+    "iptv_urls": [
+      "https://iptv.tapesh.tv/tapesh/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Z0k0qEYEWnFz7F",
+    "name": "Press TV",
+    "iptv_urls": [
+      "https://live.presstv.ir/hls/presstv.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "8ASIayZG97M5CC",
+    "name": "SL 1",
+    "iptv_urls": [
+      "https://slonehls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "917SD3APUmI0IC",
+    "name": "SL 2",
+    "iptv_urls": [
+      "https://sltwohls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "PFlRvNDKrerKNS",
+    "name": "Tapesh Iran",
+    "iptv_urls": [
+      "https://iptv.tapesh.tv/tapeshiran/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "twF2oDz7S9EOtz",
+    "name": "TBN Nejat TV",
+    "iptv_urls": [
+      "https://hls.nejat.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Ds5kjE7mChd5a5",
+    "name": "Varzesh TV",
+    "iptv_urls": [
+      "https://stream.sainaertebat.com/hls2/varzeshtest.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "3CG7FQ47ykhGlU",
+    "name": "YourTime TV",
+    "iptv_urls": [
+      "https://hls.yourtime.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  }
+]

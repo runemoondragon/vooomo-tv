@@ -1,0 +1,112 @@
+[
+  {
+    "nanoid": "pPdE8C8cpyAqht",
+    "name": "Force Thirteen Earthquakes",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/DBP8Arz51pc"
+    ],
+    "language": "eng",
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "k8mitUmGi9GKFi",
+    "name": "Hiperconectados TV",
+    "iptv_urls": [
+      "https://stmv5.voxtvhd.com.br/hiperconectados/hiperconectados/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "cl",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ub8JrS0E2NV4BX",
+    "name": "Hubble",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/GnRVVbCRUw8"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mmb6ehRkLI6kQW",
+    "name": "INWONDER",
+    "iptv_urls": [
+      "https://amg00861-amg00861c4-firetv-us-4724.playouts.now.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "nl",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "uPBnVmprz4lcyz",
+    "name": "NASA: ISS",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/jKHvbJe9c_Y"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "9Lv6gyQaWTeTvh",
+    "name": "NASA: ISS HD",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/H999s0P1Er0"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "OMzjODF6Uqhu43",
+    "name": "Nova TV Agrotour",
+    "iptv_urls": [
+      "https://video01.kshost.com.br/marcelo6682/marcelo6682/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "por",
+    "country": "br",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FYUdaDzOvj12WM",
+    "name": "Persiana Science",
+    "iptv_urls": [
+      "https://scihls.persiana.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "fr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "PsC2Ff8IrDt4Uv",
+    "name": "Su_Root: Earthquake Monitoring",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/w5ecwLord2A"
+    ],
+    "language": "jpn",
+    "country": "jp",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "cRlSQH7iSIDJ6Y",
+    "name": "Xtrema Animal",
+    "iptv_urls": [
+      "https://stmv6.voxtvhd.com.br/xtremaanimal/xtremaanimal/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "ar",
+    "isGeoBlocked": false
+  }
+]

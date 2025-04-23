@@ -1,0 +1,388 @@
+[
+  {
+    "nanoid": "VSYhpUvC9t7VjP",
+    "name": "3HD",
+    "iptv_urls": [
+      "https://lb1-live-mv.v2h-cdn.com/hls/ffae/3hd/3hd.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "fgt71QAXBWF0xr",
+    "name": "13 Siam Thai",
+    "iptv_urls": [
+      "https://live.x2.co.th/live/13livetv-th.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "7Rf4ZdGd6obMKE",
+    "name": "ALTV",
+    "iptv_urls": [
+      "https://thaipbs-ujxrch.cdn.byteark.com/live/playlist_1080p/index.m3u8",
+      "https://thaipbs-ujxrch.cdn.byteark.com/live/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "8jiJPk9xiCpTar",
+    "name": "Amarin TV",
+    "iptv_urls": [
+      "https://lb1-live-mv.v2h-cdn.com/hls/ffad/amarin/amarin.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "BWaFZgSUSFWAMm",
+    "name": "Boonniyom TV",
+    "iptv_urls": [
+      "https://live.x2.co.th/live/bntv.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FH7NvrC8IdGbek",
+    "name": "DLTV 2",
+    "iptv_urls": [
+      "https://cdn-live.dltv.ac.th/dltv02.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Z2nBboETrkSzIa",
+    "name": "DLTV 3",
+    "iptv_urls": [
+      "https://cdn-live.dltv.ac.th/dltv03.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "28rjnzXjPjea82",
+    "name": "DLTV 4",
+    "iptv_urls": [
+      "https://cdn-live.dltv.ac.th/dltv04.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "RfFYZpw2B1Tu6O",
+    "name": "DLTV 5",
+    "iptv_urls": [
+      "https://cdn-live.dltv.ac.th/dltv05.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "SBNkYWrTHUHlU6",
+    "name": "DLTV 6",
+    "iptv_urls": [
+      "https://cdn-live.dltv.ac.th/dltv06.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5n7uTj1v7KJgAK",
+    "name": "DLTV 7",
+    "iptv_urls": [
+      "https://cdn-live.dltv.ac.th/dltv07.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "AtqNekEK9bqlpP",
+    "name": "DLTV 8",
+    "iptv_urls": [
+      "https://cdn-live.dltv.ac.th/dltv08.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ReBKejReML00hL",
+    "name": "DLTV 9",
+    "iptv_urls": [
+      "https://cdn-live.dltv.ac.th/dltv09.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "J2tWh2yACsVBKq",
+    "name": "DLTV 10",
+    "iptv_urls": [
+      "https://cdn-live.dltv.ac.th/dltv10.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "1UZOek5lIzCih6",
+    "name": "DLTV 11",
+    "iptv_urls": [
+      "https://cdn-live.dltv.ac.th/dltv11.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "9tRf46L4LZNOGa",
+    "name": "DLTV 12",
+    "iptv_urls": [
+      "https://cdn-live.dltv.ac.th/dltv12.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "i5UXCyXzVkJ6Kf",
+    "name": "DLTV 14",
+    "iptv_urls": [
+      "https://cdn-live.dltv.ac.th/dltv14.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sfr4boA9nNaI9M",
+    "name": "DLTV 15",
+    "iptv_urls": [
+      "https://cdn-live.dltv.ac.th/dltv15.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "fnCk9dZ06fH0Ee",
+    "name": "Esan TV",
+    "iptv_urls": [
+      "https://psiiptv-b.sky-cdn.com/ttd20-playlist/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "omZ8ESluZncX8u",
+    "name": "GMM 25",
+    "iptv_urls": [
+      "https://lb1-live-mv.v2h-cdn.com/hls/ffbf/gmm25/gmm25.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "j7blPymabPCxa8",
+    "name": "JKN 18",
+    "iptv_urls": [
+      "https://lb1-live-mv.v2h-cdn.com/hls/ffda/jkn18/jkn18.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "n8EtzlvDQLCNLL",
+    "name": "Nation TV",
+    "iptv_urls": [
+      "https://nationtv-1jdcjo.cdn.byteark.com/fleetstream/nationtvlive/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "vYZhJDBdrEQDku",
+    "name": "ONE HD 31",
+    "iptv_urls": [
+      "https://lb1-live-mv.v2h-cdn.com/hls/ffba/one/one.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "chmBg2GBFNqXoJ",
+    "name": "Police TV",
+    "iptv_urls": [
+      "https://cdn-th-vip.livestreaming.in.th/policetv/policetv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "olJQmVUDZgXj1I",
+    "name": "SHOP CH Thailand",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/rWOUn4DYIiY"
+    ],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "bvkcq09Cd3U8lf",
+    "name": "Suwannabhumi Channel",
+    "iptv_urls": [
+      "https://live.bangkokstream.com:19360/suwannabhumi/suwannabhumi.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ikKu9tSJWsApMx",
+    "name": "T Sports 7",
+    "iptv_urls": [
+      "https://lb1-live-mv.v2h-cdn.com/hls/ffef/tsport/tsport.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2ascmCxsHrQTUI",
+    "name": "Thai Chaiyo",
+    "iptv_urls": [
+      "https://live-iptv.thaichaiyo.tv/tcy/live-manifest.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "RErWNfh4idOsdr",
+    "name": "Thai Parliament TV",
+    "iptv_urls": [
+      "https://tv-live.tpchannel.org/live/tv.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "VDGTa2zgqbVjQZ",
+    "name": "Thairath TV",
+    "iptv_urls": [
+      "https://lb1-live-mv.v2h-cdn.com/hls/ffaf/thairath/thairath.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ikVj1JDEt2BAaR",
+    "name": "TNN 16",
+    "iptv_urls": [
+      "https://lb1-live-mv.v2h-cdn.com/hls/ffdc/tnn/tnn.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "NKLScQ6EvdyLLB",
+    "name": "Top News",
+    "iptv_urls": [
+      "https://live.topnews.co.th/hls/topnews_a_720.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "3KwfMQqWsM99dX",
+    "name": "True 4U (720)",
+    "iptv_urls": [
+      "https://lb1-live-mv.v2h-cdn.com/hls/ffca/true24/true24.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "OugmB2qwPRVvcG",
+    "name": "TV5 HD",
+    "iptv_urls": [
+      "https://lb1-live-mv.v2h-cdn.com/hls/fffb/5hd/5hd.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "qAUjz7SsHCH8vp",
+    "name": "Workpoint TV",
+    "iptv_urls": [
+      "https://lb1-live-mv.v2h-cdn.com/hls/ffcb/workpoint/workpoint.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tha",
+    "country": "th",
+    "isGeoBlocked": false
+  }
+]

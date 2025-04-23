@@ -1,0 +1,84 @@
+[
+  {
+    "nanoid": "AQflHxNei4CCgO",
+    "name": "AccuWeather Now",
+    "iptv_urls": [
+      "https://amg00684-accuweather-accuweather-rokuus-0endj.amagi.tv/playlist.m3u8",
+      "https://accuweather-xumo.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "9a6LkOKsyhE8Y4",
+    "name": "FOX Weather",
+    "iptv_urls": [
+      "https://247wlive.foxweather.com/stream/index.m3u8",
+      "https://livetv-fa.tubi.video/fox-weather/index.m3u8",
+      "https://amg01542-foxweatherllc-foxweather-xumo-ve91o.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/wt6SIE7BXS8"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "dfvV9SkyUqJgjs",
+    "name": "MeteoTV",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/DcQ2R1rYtPs"
+    ],
+    "language": "ron",
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "fwbzYu3hPUpILi",
+    "name": "The Grio (KCKS-LD8)",
+    "iptv_urls": [
+      "https://cdn.igocast.com/channel8_hls/channel8_master.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "1hL9rQJB43OcSV",
+    "name": "Weatherspy",
+    "iptv_urls": [
+      "https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "hin",
+    "country": "in",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "jJDH0xwjNSKT7T",
+    "name": "WeatherSpy",
+    "iptv_urls": [
+      "https://beaece44.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X1dlYXRoZXJTcHlfSExT/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "EHhc90wawtgTuv",
+    "name": "Wetter-Panorama",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/NIuO6hrFTrg"
+    ],
+    "language": "deu",
+    "country": "at",
+    "isGeoBlocked": false
+  }
+]

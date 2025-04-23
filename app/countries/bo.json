@@ -1,0 +1,178 @@
+[
+  {
+    "nanoid": "PuOdackS09IXBO",
+    "name": "Bolivia TV",
+    "iptv_urls": [
+      "https://5fe2654d6127d.streamlock.net:443/boliviatv/videoboliviatv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "8JinjVp8J267c4",
+    "name": "Bolivia TV 7.2",
+    "iptv_urls": [
+      "https://video1.getstreamhosting.com:1936/8224/8224/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "AJoow1IGORtaZe",
+    "name": "Bolivisión LPZ",
+    "iptv_urls": [
+      "https://alba-bo-bolivision-bolivision.stream.mediatiquestream.com/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2TeFmbSu18GnAQ",
+    "name": "Cadena A",
+    "iptv_urls": [
+      "https://5fe2654d6127d.streamlock.net/cadenaa/videocadenaa/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5HdHFjZJM2EQLx",
+    "name": "Ceacom",
+    "iptv_urls": [
+      "https://eu1.servers10.com:8081/ceacom/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hiCZpbwj9latCv",
+    "name": "Coral TV",
+    "iptv_urls": [
+      "https://tv.mediacp.eu:8081/coraltv/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "RMJfAceY5nhhef",
+    "name": "Radio Uno PST",
+    "iptv_urls": [
+      "https://master.tucableip.com/pstbolivia/video.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hzi4nlNP3J2X8P",
+    "name": "Red CCTV",
+    "iptv_urls": [
+      "https://solo.disfrutaenlared.com:1936/redcctv/redcctv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "87xKAUIruoYGZK",
+    "name": "TDT Multimedia",
+    "iptv_urls": [
+      "https://video01.kshost.com.br:4443/juan6318/juan6318/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "LFx5rbcyR21noP",
+    "name": "Univalle Televisión",
+    "iptv_urls": [
+      "https://master.tucableip.com/univalletv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "T3D6a3NyVvl2H9",
+    "name": "UniversidadMayordeSanAndres",
+    "iptv_urls": [
+      "https://s1.tvdatta.com:3557/live/tvulive.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "wk3L26R8cebJQ2",
+    "name": "UPP TV/Bolivisión SCZ",
+    "iptv_urls": [
+      "https://alba-bo-bolivision-upptv.stream.mediatiquestream.com/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "bXD4q6ffj1GZXZ",
+    "name": "VTV Canal 17",
+    "iptv_urls": [
+      "https://solo.disfrutaenlared.com:1936/vtvcanal/vtvcanal/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "OhT2rOhQEAqu1t",
+    "name": "Zoy TV Sports 1",
+    "iptv_urls": [
+      "https://ssh101stream.ssh101.com/akamaissh101/ssh101/zoytvsports/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aiAxUCzm682WZl",
+    "name": "Zoy TV Turcas",
+    "iptv_urls": [
+      "https://ssh101stream.ssh101.com/akamaissh101/ssh101/zoytvturcas/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "zBnDeXzf6y9yBT",
+    "name": "ZoyTV Plus",
+    "iptv_urls": [
+      "https://ssh101stream.ssh101.com/akamaissh101/ssh101/zoytv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "bo",
+    "isGeoBlocked": false
+  }
+]

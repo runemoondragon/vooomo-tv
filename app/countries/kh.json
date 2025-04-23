@@ -1,0 +1,68 @@
+[
+  {
+    "nanoid": "9v7vzS3xsxjDYS",
+    "name": "Apsara TV11",
+    "iptv_urls": [
+      "https://live.ams.com.kh/app/stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fra",
+    "country": "kh",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "g4A3bB8HmwN8Zj",
+    "name": "CTV 9",
+    "iptv_urls": [
+      "https://live-evg6.tv360.metfone.com.kh/CTV9HD@1.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "khm",
+    "country": "kh",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "KFIFBJTv8WwBLR",
+    "name": "Fresh News",
+    "iptv_urls": [
+      "https://streaming.freshnewsasia.com/live/ngrp:myStream_all/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "khm",
+    "country": "kh",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "9crqbJjJGnnzxY",
+    "name": "SEATV",
+    "iptv_urls": [
+      "https://seatv.netlinkbroadcaster.com/hls/test.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "khm",
+    "country": "kh",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Mhke0W0yDC0bio",
+    "name": "TV5 Cambodia",
+    "iptv_urls": [
+      "https://es1-p1-netcdn.metfone.com.kh/netcdn-live-36/36/output/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "khm",
+    "country": "kh",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "m3PpQXO8kJ3GQC",
+    "name": "TVK 2",
+    "iptv_urls": [
+      "https://live.kh.malimarcdn.com/live/tvk2.stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "khm",
+    "country": "kh",
+    "isGeoBlocked": false
+  }
+]

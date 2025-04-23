@@ -1,0 +1,169 @@
+[
+  {
+    "nanoid": "P8q5mRZ0E6h0hF",
+    "name": "ABC News",
+    "iptv_urls": [
+      "https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8",
+      "https://livetv-fa.tubi.video/abc-news/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "31U63I8METsDXI",
+    "name": "BBC News (North America)",
+    "iptv_urls": [
+      "https://d2vnbkvjbims7j.cloudfront.net/containerA/LTN/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "",
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "GqdJfmTvg6EO3X",
+    "name": "CGTN",
+    "iptv_urls": [
+      "https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8",
+      "https://english-livebkws.cgtn.com/live/encgtn.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "cn",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "WGiKSjCar1BvSz",
+    "name": "CNA International",
+    "iptv_urls": [
+      "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/XWq5kBlakcQ"
+    ],
+    "language": "eng",
+    "country": "sg",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lpYmUDR5HpXALT",
+    "name": "DW English",
+    "iptv_urls": [
+      "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/LuKwFajn37U"
+    ],
+    "language": "",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "vyAlDaoF9WU1Q1",
+    "name": "Euronews English",
+    "iptv_urls": [
+      "https://a-cdn.klowdtv.com/live3/euronews_720p/playlist.m3u8",
+      "https://apollo.production-public.tubi.io/live/ac-euronews2.m3u8",
+      "https://streams.sofast.tv/euronewsen/live/eds/euronews-en/25017/euronews-en.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/pykpO5kQJ98"
+    ],
+    "language": "eng",
+    "country": "fr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Y1u3wssmm25wMQ",
+    "name": "FOX News Now",
+    "iptv_urls": [
+      "https://fox-foxnewsnow-samsungus.amagi.tv/playlist.m3u8",
+      "https://livetv-fa.tubi.video/fox-live-now/index.m3u8",
+      "https://amg00488-foxdigital-newsnow-xumo-qbvgp.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "IP3OhGLS9zmwc7",
+    "name": "I24 News English",
+    "iptv_urls": [
+      "https://bcovlive-a.akamaihd.net/ecf224f43f3b43e69471a7b626481af0/eu-central-1/5377161796001/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "il",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ekFWl5aVUxSeip",
+    "name": "RT News",
+    "iptv_urls": [
+      "https://rt-glb.rttv.com/live/rtnews/playlist.m3u8",
+      "https://rt-glb.rttv.com/dvr/rtnews/playlist.m3u8",
+      "https://rumble.com/live-hls-dvr/33aw1a/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "v7SxxnsQX39ThO",
+    "name": "Scripps News",
+    "iptv_urls": [
+      "https://livetv-fa.tubi.video/scripps-news/playlist.m3u8",
+      "https://scripps-newsy-1-us.xumo.wurl.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2UurVFYPvprdL8",
+    "name": "Sky News",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/YDvsBbKfLPA"
+    ],
+    "language": "eng",
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "egFyCvci4RMv2r",
+    "name": "TRT World",
+    "iptv_urls": [
+      "https://tv-trtworld.medya.trt.com.tr/master.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/NWyXUXzN7So"
+    ],
+    "language": "eng",
+    "country": "tr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hbdW5jPBuqVJNb",
+    "name": "WION",
+    "iptv_urls": [
+      "https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8",
+      "https://raw.githubusercontent.com/Alstruit/adaptive-streams/alstruit-10_23_in/streams/in/WION.in.m3u8",
+      "https://d7x8z4yuq42qn.cloudfront.net/index_1.m3u8",
+      "https://wion-klowdtv.amagi.tv/playlist.m3u8",
+      "https://d7x8z4yuq42qn.cloudfront.net/index_2.m3u8",
+      "https://d7x8z4yuq42qn.cloudfront.net/index_5.m3u8",
+      "https://d7x8z4yuq42qn.cloudfront.net/index_4.m3u8",
+      "https://d7x8z4yuq42qn.cloudfront.net/index_3.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "in",
+    "isGeoBlocked": false
+  }
+]

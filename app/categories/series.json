@@ -1,0 +1,813 @@
+[
+  {
+    "nanoid": "mDm8G0VbiW7Zb2",
+    "name": "Always Funny Videos",
+    "iptv_urls": [
+      "https://a-cdn.klowdtv.com/live3/alwaysfunny_720p/playlist.m3u8",
+      "https://apollo.production-public.tubi.io/live/ac-afv.m3u8",
+      "https://linear-12.frequency.stream/dist/glewedtv/12/hls/master/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "H7uVbomjdS37xA",
+    "name": "AMC All Weddings",
+    "iptv_urls": [
+      "https://d85lu9l3axp7b.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-49b4g6287mnav/playlist.m3u8",
+      "https://amc-allweddings-1-us.xumo.wurl.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "YfslfXx3GousyO",
+    "name": "Antiques Roadshow UK",
+    "iptv_urls": [
+      "https://bbc-antiquesroadshowuk-1-us.xumo.wurl.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TMYtFK0Z2UCe2X",
+    "name": "Are We There Yet?",
+    "iptv_urls": [
+      "https://apollo.production-public.tubi.io/live/ac-are-we-there-yet2.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "dWew6qx5gHEn1X",
+    "name": "At Home with Family Handyman",
+    "iptv_urls": [
+      "https://linear-458.frequency.stream/dist/xumo/458/hls/master/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2FlUnahRPoXRU8",
+    "name": "AVA Series",
+    "iptv_urls": [
+      "https://avaserieshls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "tkd804U8OUTMKg",
+    "name": "Bab Al Hara",
+    "iptv_urls": [
+      "https://shls-live-enc.edgenextcdn.net/out/v1/948c54279b594944adde578c95f1d7d1/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "sa",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "o0UvEWQ7gtWbCm",
+    "name": "Baywatch",
+    "iptv_urls": [
+      "https://apollo.production-public.tubi.io/live/ac-baywatch.m3u8",
+      "https://baywatch-xumo.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "6kbylKZniTRndI",
+    "name": "BBC Doctor Who Classic",
+    "iptv_urls": [
+      "https://bbc-classicdrwho-1-us.xumo.wurl.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Owzohz94tBe9tV",
+    "name": "Beano TV",
+    "iptv_urls": [
+      "https://beanostudios-beanotv-1-gb.samsung.wurl.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "qjlcw1flQxD6UO",
+    "name": "Bold and the Beautiful",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/aA0eCFaXH-w"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sM7rYQFLMt6qyU",
+    "name": "Bravo Farsi TV",
+    "iptv_urls": [
+      "https://bravoohls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "ir",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "94QOTvoD2MmNeP",
+    "name": "Choppertown",
+    "iptv_urls": [
+      "https://linear-11.frequency.stream/dist/glewedtv/11/hls/master/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "vxDRmrDFmkmFwb",
+    "name": "Cold Case Files",
+    "iptv_urls": [
+      "https://apollo.production-public.tubi.io/live/ac-cold-case-files.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "GohX9yTPS5mHUN",
+    "name": "Cops",
+    "iptv_urls": [
+      "https://a7d6af1c184e465db4f39316a5181c1f.mediatailor.us-east-1.amazonaws.com/v1/master/0fb304b2320b25f067414d481a779b77db81760d/RakutenTV-eu_COPS/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mvJvznzpuIaUXW",
+    "name": "Dark Matter TV",
+    "iptv_urls": [
+      "https://tricoast-tv-dark-matter-01-us.ono.wurl.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "6XMnKrqKeumP7M",
+    "name": "Deal or No Deal",
+    "iptv_urls": [
+      "https://apollo.production-public.tubi.io/live/ac-deal-or-no-deal.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "83hKCv3F6PRw2j",
+    "name": "Degrassi The Next Generation",
+    "iptv_urls": [
+      "https://d365kok94jpr38.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-2xcmoue1get1c/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hsHxn2eiXlY19k",
+    "name": "Dog the Bounty Hunter",
+    "iptv_urls": [
+      "https://apollo.production-public.tubi.io/live/ac-dog-the-bounty-hunter.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aUMgSxs4t83jMD",
+    "name": "Emret Komutanım",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/toD9B3krEgo"
+    ],
+    "language": "tur",
+    "country": "tr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aOe83z3GMbIJzO",
+    "name": "Farscape",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/kvepqOtnU7Q"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "wTn0cUj98LEdhG",
+    "name": "Farscape: La Saga en Español",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/LUtR-uSGDXk"
+    ],
+    "language": "spa",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "3xlEEhVIdMvQiX",
+    "name": "Fatmagül'ün Suçu Ne?",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/qikDqZfTHOA"
+    ],
+    "language": "tur",
+    "country": "tr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "R2dRVGPNTufpT3",
+    "name": "Fear Factor",
+    "iptv_urls": [
+      "https://apollo.production-public.tubi.io/live/ac-fear-factor.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "GOMdLvvyu3y5ss",
+    "name": "GZT",
+    "iptv_urls": [
+      "https://mn-nl.mncdn.com/gzttv/gzttv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tur",
+    "country": "tr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "o7sYxVV5UOCp3h",
+    "name": "Hala Bel3eyal: Shabab Al-Bomb",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/5cME8xlBGXk"
+    ],
+    "language": "ara",
+    "country": "sa",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "YsiveIhfS1QhlQ",
+    "name": "Hallmark Drama",
+    "iptv_urls": [
+      "https://v1.thetvapp.to/hls/HallmarkDrama/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "1mMdRDyYpLz83f",
+    "name": "İnci Taneleri",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/7ansDZhrY6Q"
+    ],
+    "language": "tur",
+    "country": "tr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "UDmlskBaSdu1z8",
+    "name": "Kurtlar Vadisi",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/BhUr9G4e2s4"
+    ],
+    "language": "tur",
+    "country": "tr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "VCYz7uZAyMJXcF",
+    "name": "Kuzey Güney",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/ay_whLpQXgc"
+    ],
+    "language": "tur",
+    "country": "tr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "OJJQkfx9y7eg2Z",
+    "name": "Latina Clasicos",
+    "iptv_urls": [
+      "https://redirector.rudo.video/hls-video/plus226/latina2/latina2.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "SkSfXjSJImIBx6",
+    "name": "MBC Drama USA",
+    "iptv_urls": [
+      "https://mbcdrama-usa-ak.akamaized.net/out/v1/876f960feec24a8aba9e9d3f9023174b/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "THZMsKbF1AbkT2",
+    "name": "MBC Masr Drama",
+    "iptv_urls": [
+      "https://shls-live-enc.edgenextcdn.net/out/v1/08eca926a78a41339b8010c882410307/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "sa",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "iSu9BNAWIPceje",
+    "name": "Midsomer Murders",
+    "iptv_urls": [
+      "https://apollo.production-public.tubi.io/live/ac-midsomer-murders.m3u8",
+      "https://all3media-midsomer-1-us.xumo.wurl.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "U81csRB9YHDFcc",
+    "name": "Mireasa",
+    "iptv_urls": [
+      "https://stream1.antenaplay.ro/live/MireasaExtra/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ron",
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "X6kETzsLQOUt4r",
+    "name": "MST3K",
+    "iptv_urls": [
+      "https://amg00163-shoutfactory-mst3k-xumo-r2pwd.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "WfBeWY1RnvDWYZ",
+    "name": "Muhteşem Yüzyıl",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/4HZW53S0bv8"
+    ],
+    "language": "tur",
+    "country": "tr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "kOqansdIKBiOls",
+    "name": "Nosey",
+    "iptv_urls": [
+      "https://aegis-cloudfront-1.tubi.video/78c30bbd-f60c-4ee6-9922-ad7aa63ca8ec/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "rgH5xmYC8UhU1G",
+    "name": "Novela Channel",
+    "iptv_urls": [
+      "https://video1.getstreamhosting.com:1936/8284/8284/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fra",
+    "country": "ci",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "OdANThkzD9447z",
+    "name": "Novelisima",
+    "iptv_urls": [
+      "https://dai.google.com/linear/hls/event/sFuxwI37R9KMTs-KywMcBg/master.m3u8",
+      "https://stream.ads.ottera.tv/playlist.m3u8?network_id=2380"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "EqniGxixO4xx8t",
+    "name": "PBS Antiques Roadshow",
+    "iptv_urls": [
+      "https://amg02333-pbs-amg02333c8-firetv-us-4239.playouts.now.amagi.tv/playlist.m3u8",
+      "https://amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "WjQsJ6SPRLhezs",
+    "name": "PBS Nature",
+    "iptv_urls": [
+      "https://amg02333-pbs-amg02333c11-firetv-us-4242.playouts.now.amagi.tv/playlist.m3u8",
+      "https://amg01597-wnetnewyorkpubl-pbsnature-xumo-8xorq.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "oZE0gRjI6bynEL",
+    "name": "PNC Drama",
+    "iptv_urls": [
+      "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/pnc-drama/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "eg",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "vosJ1MimmKjovt",
+    "name": "Roya Drama",
+    "iptv_urls": [
+      "https://playlist.fasttvcdn.com/pl/a2le4pbpa6rpzv147haf4w/drama/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "jo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "UQHpLbU32owAll",
+    "name": "Shout! Studios: 21 Jump Street",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/xOy8xXJUBa8"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TPqr0TZM4sdKIS",
+    "name": "Shout! Studios: 21 Jump Street (Français)",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/KZv_iIAgN-A"
+    ],
+    "language": "fra",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "StXc5NdfR72QxF",
+    "name": "Shout! Studios: ALF (English)",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/QlfQByoCpkY"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MmvGAkIJ1Y1or8",
+    "name": "Shout! Studios: Dennis the Menace",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/9fK7xQk9Gjg"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "VUG2RGCd2JuaGB",
+    "name": "Shout! Studios: Farscape (English)",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/6Z88CcCtKAY"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "JfdQ8GXk8vD883",
+    "name": "Shout! Studios: Father Knows Best",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/bIZ1O5Gj31k"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "fxYAd4OmyqIq2r",
+    "name": "Shout! Studios: Hunter",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/396Nv88hIUA"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "qybJSYh84g1aFG",
+    "name": "Shout! Studios: Jim Henson's The StoryTeller (English)",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/mnXnGgdAXSw"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "6B09VgzP1u7pf6",
+    "name": "Shout! Studios: Renegade",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/4jKPcxJqBjs"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "9b9wQbmK8gCvEd",
+    "name": "Shout! Studios: The Greatest American Hero",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/9cMnFy_Rozo"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "zGtMMOo5TZYGOR",
+    "name": "Shout! Studios: Wiseguy",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/So85fk_Xx4w"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "C0cdVGRwUn116S",
+    "name": "Sihirli Annem",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/KCejwr4z7NQ"
+    ],
+    "language": "tur",
+    "country": "tr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ttLEJ0gyzevrw9",
+    "name": "The Walking Dead Universe",
+    "iptv_urls": [
+      "https://amc-twdfanexperience-1-us.xumo.wurl.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mVzQcBPxaFCmi0",
+    "name": "TokuSHOUTsu: Chōjin Sentai Jetman",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/w_rya2Vh42U"
+    ],
+    "language": "jpn",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5zMPOhKUR72wAc",
+    "name": "TokuSHOUTsu: Kamen Rider",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/ORU7vPKYlIY"
+    ],
+    "language": "jpn",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hdOkvMBQELCiXA",
+    "name": "TokuSHOUTsu: Kamen Rider Zero-One",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/3ydgQgMTg7k"
+    ],
+    "language": "jpn",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sod7cg7NpndHpA",
+    "name": "TokuSHOUTsu: Super Sentai Timeranger",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/Ll1qcaAQX4g"
+    ],
+    "language": "jpn",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "XqX1P3iuCUKE9s",
+    "name": "TV Series 1 As Panteras",
+    "iptv_urls": [
+      "https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "por",
+    "country": "br",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "70kNFzzOa9jQON",
+    "name": "TVE Star HD",
+    "iptv_urls": [
+      "https://rtvelivestream.akamaized.net/rtvesec/int/star_main.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "YLH7tSL9ZYL5tA",
+    "name": "TVI Ficção",
+    "iptv_urls": [
+      "https://video-auth2.iol.pt/live_tvi_ficcao/live_tvi_ficcao/edge_servers/tvificcao-720p/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "por",
+    "country": "pt",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "3skZkYZQG4jxZz",
+    "name": "Unsolved Mysteries",
+    "iptv_urls": [
+      "https://livetv-fa.tubi.video/unsolved-mysteries/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "IQrnnNNldjOCl4",
+    "name": "XPTV US",
+    "iptv_urls": [
+      "https://janus.xpbroadcasting.com:8443/hls/xptvUS.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "vCnd4xDV16UOeI",
+    "name": "Yalan Dünya",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/swCdxaGHkM8"
+    ],
+    "language": "tur",
+    "country": "tr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "BoTkJbvbkh3MUN",
+    "name": "Yaprak Dökümü",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/crwxJBQKWj4"
+    ],
+    "language": "tur",
+    "country": "tr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "4tN5nUxcAqYPgp",
+    "name": "Zee Alwan",
+    "iptv_urls": [
+      "https://weyyak-live.akamaized.net/weyyak_zee_alwan/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "ae",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "OPwNo7g1vlqU7d",
+    "name": "Дембельский альбом: Солдаты",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/1zpCNefHbC0"
+    ],
+    "language": "rus",
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "J3EJNMTTTwoCfX",
+    "name": "Кино Добряк: Сваты и Байки Митяя",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/OZJJ8Tm7ozg"
+    ],
+    "language": "rus",
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "vzPGxRe9XdVwB1",
+    "name": "Советское телевидение. ГОСТЕЛЕРАДИОФОНД: Следствие ведут ЗнаТоКи",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/NFXv2UW-KLI"
+    ],
+    "language": "rus",
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "VViT8uYd2d6XZP",
+    "name": "디글 클래식 :Diggle Classic",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/H3uur6g_9CA"
+    ],
+    "language": "kor",
+    "country": "kr",
+    "isGeoBlocked": false
+  }
+]
