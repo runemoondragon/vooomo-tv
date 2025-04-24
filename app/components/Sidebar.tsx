@@ -37,9 +37,11 @@ interface SidebarProps {
   onCategoryClick: (category: string) => void;
   activeCategory: string;
   onSearchTermChange: (term: string) => void;
+  isOpen: boolean;
+  onClose: () => void;
 }
 
-export default function Sidebar({ onCategoryClick, activeCategory, onSearchTermChange }: SidebarProps) {
+export default function Sidebar({ onCategoryClick, activeCategory, onSearchTermChange, isOpen, onClose }: SidebarProps) {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
@@ -86,7 +88,13 @@ export default function Sidebar({ onCategoryClick, activeCategory, onSearchTermC
   ];
 
   return (
-    <aside className="fixed left-0 top-14 h-[calc(100vh-3.5rem)] w-64 bg-[#1e1e1e] text-white border-r border-gray-800 flex flex-col">
+    <aside 
+       className={`fixed top-0 left-0 h-full w-64 bg-[#1e1e1e] text-white border-r border-gray-800 flex flex-col z-40 
+                 transition-transform duration-300 ease-in-out 
+                 ${isOpen ? 'translate-x-0' : '-translate-x-full'} 
+                 md:translate-x-0 md:top-14 md:h-[calc(100vh-3.5rem)]`
+       }
+     > 
       <div className="p-4 border-b border-gray-700 sticky top-0 bg-[#1e1e1e] z-10">
          <div className="flex items-center gap-2 mb-3">
            <div className="bg-green-600 p-1.5 rounded flex-shrink-0">
@@ -117,7 +125,7 @@ export default function Sidebar({ onCategoryClick, activeCategory, onSearchTermC
             return (
               <button
                 key={item.name}
-                onClick={() => onCategoryClick(item.name)}
+                onClick={() => { onCategoryClick(item.name); /* onClose(); implicitly handled by parent */ }}
                 className={`w-full flex items-center px-4 py-1.5 text-gray-300 hover:bg-gray-700 group text-left transition-colors duration-150 ${activeCategory === item.name ? 'bg-gray-600 text-white' : ''}`}
                 title={item.definition}
               >

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { ArrowLeftIcon } from '@heroicons/react/24/outline';
+import { ArrowLeftIcon, Bars3Icon } from '@heroicons/react/24/outline';
 import { DateTime } from 'luxon';
 import countryTz from 'country-tz';
 
@@ -9,9 +9,10 @@ interface HeaderProps {
   onBackToCountries: () => void;
   showBackButton: boolean;
   targetCountryCode: string | null; // Added prop for country code
+  onToggleLeftSidebar: () => void; // Function to toggle left sidebar
 }
 
-export default function Header({ onBackToCountries, showBackButton, targetCountryCode }: HeaderProps) {
+export default function Header({ onBackToCountries, showBackButton, targetCountryCode, onToggleLeftSidebar }: HeaderProps) {
   const [currentTime, setCurrentTime] = useState('');
   const [timeLabel, setTimeLabel] = useState('Local Time');
   const [timezone, setTimezone] = useState<string | null>(null);
@@ -65,26 +66,33 @@ export default function Header({ onBackToCountries, showBackButton, targetCountr
   }, [timezone]); // Re-run timer setup if the timezone changes
 
   return (
-    <header className="fixed top-0 left-0 right-0 h-14 bg-[#1e1e1e] text-white z-50 flex items-center justify-between px-4 border-b border-gray-800">
-      <div className="flex items-center">
-        {/* Placeholder for future logo/search if needed */}
-        <span className="text-xl font-semibold">vooomoTV</span>
+    <header className="fixed top-0 left-0 right-0 h-14 bg-[#1e1e1e] text-white z-50 flex items-center justify-between px-2 md:px-4 border-b border-gray-800">
+      <div className="flex items-center gap-2">
+        {/* Hamburger Menu Button - Mobile Only */}
+        <button 
+           onClick={onToggleLeftSidebar} 
+           className="p-2 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white md:hidden"
+           aria-label="Open sidebar"
+         >
+           <Bars3Icon className="h-6 w-6 text-white" />
+        </button>
+        <span className="text-xl font-semibold hidden sm:block">vooomoTV</span>
       </div>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-2 md:gap-4">
         {showBackButton && (
           <button
             onClick={onBackToCountries}
-            className="flex items-center gap-1 px-3 py-1.5 rounded-lg hover:bg-gray-800 transition-colors"
+            className="flex items-center gap-1 px-2 py-1.5 md:px-3 rounded-lg hover:bg-gray-800 transition-colors"
             title="Back to Countries"
           >
             <ArrowLeftIcon className="w-5 h-5" />
-            <span className="text-sm">Countries</span>
+            <span className="text-sm hidden sm:inline">Countries</span>
           </button>
         )}
         {/* Updated Time Display */}
-        <div className="flex items-center gap-2" title={timezone || 'System Timezone'}> 
-          <span className="text-sm text-gray-400 whitespace-nowrap">{timeLabel}</span>
-          <span className="text-sm text-gray-400 font-medium">{currentTime}</span>
+        <div className="flex items-center gap-1 md:gap-2" title={timezone || 'System Timezone'}> 
+          <span className="text-xs sm:text-sm text-gray-400 whitespace-nowrap">{timeLabel}</span>
+          <span className="text-xs sm:text-sm text-gray-400 font-medium">{currentTime}</span>
         </div>
       </div>
     </header>

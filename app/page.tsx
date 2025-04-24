@@ -1,11 +1,26 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import dynamic from 'next/dynamic';
 import VideoPlayer from './components/VideoPlayer';
 import Sidebar from './components/Sidebar';
 import ChannelList from './components/ChannelList';
 import CountryList from './components/CountryList';
 import Header from './components/Header';
+import countriesMetadata from './countries_metadata.json'; // Import metadata
+
+const InteractiveGlobe = dynamic(() => import('./components/InteractiveGlobe'), {
+  ssr: false,
+  loading: () => <div className="flex items-center justify-center h-full"><p className="text-center text-gray-400">Loading Globe...</p></div>
+});
+
+// Define type for metadata entries (matching the JSON structure)
+interface CountryMetaData {
+  country: string;
+  capital: string;
+  timeZone: string;
+  hasChannels: boolean;
+}
 
 interface Channel {
   nanoid: string;
@@ -17,11 +32,16 @@ interface Channel {
   isGeoBlocked: boolean;
 }
 
+// Cast the imported JSON to the correct type
+const typedCountriesMetadata = countriesMetadata as Record<string, CountryMetaData>;
+
 export default function Home() {
   const [showPlayer, setShowPlayer] = useState(false);
   const [currentCategory, setCurrentCategory] = useState('');
   const [selectedChannel, setSelectedChannel] = useState<Channel | null>(null);
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
+  const [selectedCountryName, setSelectedCountryName] = useState<string | null>(null); // State for full name
+  const [selectedCapital, setSelectedCapital] = useState<string | null>(null); // State for capital
   const [channels, setChannels] = useState<Channel[]>([]);
   const [rightSidebarView, setRightSidebarView] = useState<'countries' | 'channels' | 'search'>('countries');
   const [isLoading, setIsLoading] = useState(false);
@@ -31,6 +51,13 @@ export default function Home() {
   const [searchResults, setSearchResults] = useState<Channel[]>([]);
   const [isSearching, setIsSearching] = useState(false);
   const [searchError, setSearchError] = useState<string | null>(null);
+
+  // --- Mobile State ---
+  const [isLeftSidebarOpen, setIsLeftSidebarOpen] = useState(false);
+  // Right sidebar on mobile is implicitly open when view is channels/search
+  // ---------------------
+
+  const toggleLeftSidebar = () => setIsLeftSidebarOpen(!isLeftSidebarOpen);
 
   const fetchChannels = useCallback(async (url: string, type: 'category' | 'country' | 'search') => {
     const loadingSetter = type === 'search' ? setIsSearching : setIsLoading;
@@ -56,6 +83,7 @@ export default function Home() {
       } else if (type === 'search') {
         setRightSidebarView('search');
       }
+      setIsLeftSidebarOpen(false); // Close left sidebar on mobile after selection
     } catch (err) {
       console.error(`Error loading ${type} results:`, err);
       errorSetter(err instanceof Error ? err.message : 'An unknown error occurred');
@@ -69,18 +97,25 @@ export default function Home() {
   }, []);
 
   const handleCountryClick = (countryCode: string) => {
-    setSelectedCountry(countryCode);
+    const upperCode = countryCode.toUpperCase();
+    const metadata = typedCountriesMetadata[upperCode];
+
+    setSelectedCountry(upperCode); // Store uppercase code consistent with metadata keys
+    setSelectedCountryName(metadata?.country || upperCode); // Store name, fallback to code
+    setSelectedCapital(metadata?.capital || null); // Store capital if available
     setCurrentCategory('');
-    setSearchTerm('');
-    setSearchResults([]);
+    setSearchTerm(''); 
+    setSearchResults([]); 
     fetchChannels(`/api/countries/${countryCode.toLowerCase()}`, 'country');
   };
 
   const handleCategoryClick = (category: string) => {
     setCurrentCategory(category);
     setSelectedCountry(null);
-    setSearchTerm('');
-    setSearchResults([]);
+    setSelectedCountryName(null); // Clear country details
+    setSelectedCapital(null);
+    setSearchTerm(''); 
+    setSearchResults([]); 
     fetchChannels(`/api/categories/${category.toLowerCase()}`, 'category');
   };
 
@@ -93,9 +128,13 @@ export default function Home() {
       setRightSidebarView('countries');
       setCurrentCategory('');
       setSelectedCountry(null);
+      setSelectedCountryName(null); // Clear country details
+      setSelectedCapital(null);
     } else {
       setCurrentCategory('');
       setSelectedCountry(null);
+      setSelectedCountryName(null); // Clear country details
+      setSelectedCapital(null);
       fetchChannels(`/api/search?q=${encodeURIComponent(term.trim())}`, 'search');
     }
   }, [fetchChannels]);
@@ -103,6 +142,7 @@ export default function Home() {
   const handleChannelClick = (channel: Channel) => {
     setSelectedChannel(channel);
     setShowPlayer(true);
+    setIsLeftSidebarOpen(false); // Close sidebars when player opens
   };
 
   const handleBackToCountries = () => {
@@ -111,34 +151,48 @@ export default function Home() {
     setSearchResults([]);
     setCurrentCategory('');
     setSelectedCountry(null);
+    setSelectedCountryName(null); // Clear country details
+    setSelectedCapital(null);
     setSelectedChannel(null);
     setShowPlayer(false);
     setError(null);
     setSearchError(null);
     setSearchTerm('');
+    setIsLeftSidebarOpen(false);
   };
 
-  const channelListTitle = rightSidebarView === 'search' ? `Search: "${searchTerm}"` : selectedCountry ? selectedCountry.toUpperCase() : currentCategory;
   const channelsToDisplay = rightSidebarView === 'search' ? searchResults : channels;
   const isLoadingRightSidebar = rightSidebarView === 'search' ? isSearching : isLoading;
   const rightSidebarError = rightSidebarView === 'search' ? searchError : error;
 
   const targetCountryCode = selectedCountry || selectedChannel?.country || null;
 
+  // Determine if right sidebar should be visually open on mobile
+  const isRightSidebarVisuallyOpen = rightSidebarView === 'channels' || rightSidebarView === 'search';
+
   return (
-    <div className="flex min-h-screen bg-black text-white">
+    <div className="flex h-screen bg-black text-white overflow-hidden">
       <Header
         onBackToCountries={handleBackToCountries}
-        showBackButton={rightSidebarView === 'channels' || rightSidebarView === 'search'}
+        showBackButton={isRightSidebarVisuallyOpen}
         targetCountryCode={targetCountryCode}
+        onToggleLeftSidebar={toggleLeftSidebar}
       />
       <Sidebar
         onCategoryClick={handleCategoryClick}
         activeCategory={currentCategory}
         onSearchTermChange={handleSearchTermChange}
+        isOpen={isLeftSidebarOpen}
+        onClose={() => setIsLeftSidebarOpen(false)}
       />
 
-      <main className="flex-1 ml-64 mr-80 mt-14 p-4 overflow-y-auto">
+      <main 
+        className={`flex-1 transition-all duration-300 ease-in-out mt-14 relative overflow-hidden 
+          ${isLeftSidebarOpen ? 'md:ml-64' : 'ml-0'} 
+          md:ml-64 
+          ${isRightSidebarVisuallyOpen ? 'md:mr-80' : 'mr-0'} 
+          md:mr-80`}
+      >
         {showPlayer && selectedChannel ? (
           <VideoPlayer
             streamUrl={selectedChannel.iptv_urls[0] || selectedChannel.youtube_urls[0] || ''}
@@ -146,20 +200,19 @@ export default function Home() {
             channelName={selectedChannel.name}
           />
         ) : (
-          <div className="flex items-center justify-center h-full">
-            <div className="text-center">
-              <h1 className="text-3xl font-bold text-white mb-4">Welcome to VooomoTV</h1>
-              <p className="text-gray-400 text-lg">
-                Select a category, country, or search for channels.
-              </p>
-            </div>
-          </div>
+          <InteractiveGlobe onCountrySelect={handleCountryClick} />
         )}
       </main>
 
-      <aside className="fixed top-14 right-0 w-80 h-[calc(100vh-3.5rem)] bg-gray-900 border-l border-gray-700 flex flex-col">
+      <aside 
+        className={`fixed top-14 right-0 h-[calc(100vh-3.5rem)] w-full max-w-xs sm:max-w-sm md:w-80 bg-gray-900 border-l border-gray-700 flex flex-col 
+          transition-transform duration-300 ease-in-out z-30 
+          md:translate-x-0 
+          ${isRightSidebarVisuallyOpen && !showPlayer ? 'translate-x-0' : 'translate-x-full'}`
+        }
+      >
         {rightSidebarView === 'countries' ? (
-          <CountryList onCountryClick={handleCountryClick} />
+          <CountryList onCountryClick={handleCountryClick} onClose={handleBackToCountries} />
         ) : (
           isLoadingRightSidebar ? (
             <div className="flex items-center justify-center h-full"><p>Loading...</p></div>
@@ -169,14 +222,24 @@ export default function Home() {
             </div>
           ) : (
             <ChannelList
-              title={channelListTitle}
+              title={currentCategory || `Search: "${searchTerm}"`}
+              countryName={selectedCountryName}
+              capital={selectedCapital}
               channels={channelsToDisplay}
               onChannelClick={handleChannelClick}
               selectedChannelId={selectedChannel?.nanoid}
+              onClose={handleBackToCountries}
             />
           )
         )}
       </aside>
+
+      {isLeftSidebarOpen && (
+        <div 
+          onClick={toggleLeftSidebar} 
+          className="fixed inset-0 bg-black/50 z-30 md:hidden"
+        ></div>
+      )}
     </div>
   );
 } 

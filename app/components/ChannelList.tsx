@@ -3,6 +3,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { PlayCircleIcon } from '@heroicons/react/24/solid';
+import { XMarkIcon } from '@heroicons/react/24/outline';
 
 interface Channel {
   nanoid: string;
@@ -19,17 +20,42 @@ interface ChannelListProps {
   channels: Channel[];
   onChannelClick: (channel: Channel) => void;
   selectedChannelId?: string;
+  onClose: () => void;
+  countryName?: string | null;
+  capital?: string | null;
 }
 
-const ChannelList: React.FC<ChannelListProps> = ({ title, channels, onChannelClick, selectedChannelId }) => {
+const ChannelList: React.FC<ChannelListProps> = ({ title, channels, onChannelClick, selectedChannelId, onClose, countryName, capital }) => {
+  const displayTitle = countryName || title;
+  // Capital city is now secondary info, channel count will be separate
+  // const secondaryInfo = countryName && capital ? capital : `${channels.length} channels`; 
+
   return (
-    <div className="w-full h-full bg-gray-900 text-white overflow-hidden flex flex-col">
-      {/* Header */}
-      <div className="p-4 border-b border-gray-700 sticky top-0 bg-gray-900 z-10">
-        <div className="flex justify-between items-center">
-          <h2 className="text-lg font-semibold truncate" title={title}>{title}</h2>
+    <div className="w-full h-full bg-gray-900 text-white flex flex-col">
+      {/* Header with Close button & Channel Count for mobile */}
+      <div className="p-3 md:p-4 border-b border-gray-700 sticky top-0 bg-gray-900 z-10 flex items-center justify-between gap-2">
+        {/* Left side: Title and Capital */}
+        <div className="flex-shrink min-w-0"> 
+          <h2 className="text-base md:text-lg font-semibold truncate" title={displayTitle}>{displayTitle}</h2>
+          {/* Show capital only if available */} 
+          {countryName && capital && (
+             <p className="text-xs md:text-sm text-gray-400 mt-1 truncate" title={capital}>{capital}</p>
+          )}
         </div>
-        <p className="text-sm text-gray-400 mt-1">{channels.length} channels</p>
+        
+        {/* Right side: Channel Count & Close Button */}
+        <div className="flex items-center gap-2 flex-shrink-0">
+            <span className="text-xs md:text-sm text-gray-400 whitespace-nowrap">
+                {channels.length} channels
+            </span>
+            <button 
+              onClick={onClose} 
+              className="p-1 text-gray-400 hover:text-white md:hidden"
+              aria-label="Close channel list"
+            >
+              <XMarkIcon className="w-5 h-5" />
+            </button>
+        </div>
       </div>
 
       {/* Channel List - Make scrollable */}
@@ -44,23 +70,25 @@ const ChannelList: React.FC<ChannelListProps> = ({ title, channels, onChannelCli
             return (
               <button
                 key={channel.nanoid}
-                className={`w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-700 border-b border-gray-800 text-left transition-colors duration-150 ${isSelected ? 'bg-green-600/30' : ''}`}
+                className={`w-full px-3 py-2.5 md:px-4 md:py-3 flex items-center gap-2 md:gap-3 hover:bg-gray-700 border-b border-gray-800 text-left transition-colors duration-150 ${isSelected ? 'bg-green-600/30' : ''}`}
                 onClick={() => onChannelClick(channel)}
                 title={`Play ${channel.name}`}
               >
                 {/* Country Flag */}
-                <span className="text-xl w-6 flex-shrink-0">
+                <span className="text-lg w-5 md:w-6 flex-shrink-0">
                   <img
                     src={`https://flagcdn.com/w40/${channel.country.toLowerCase()}.png`}
                     alt={`${channel.country} flag`}
-                    className="w-full h-auto rounded-sm object-contain"
+                    width={24}
+                    height={16}
+                    className="rounded-sm object-contain h-auto"
                     onError={(e) => (e.currentTarget.style.display = 'none')}
                   />
                 </span>
 
                 {/* Channel Name & Language */}
                 <div className="flex-1 min-w-0">
-                  <div className="font-medium truncate" title={channel.name}>{channel.name}</div>
+                  <div className="text-sm md:text-base font-medium truncate" title={channel.name}>{channel.name}</div>
                   <div className="text-xs text-gray-400 uppercase truncate" title={channel.language}>
                     {channel.language}
                   </div>
@@ -68,7 +96,7 @@ const ChannelList: React.FC<ChannelListProps> = ({ title, channels, onChannelCli
 
                 {/* Play Icon (visible when selected) */}
                 {isSelected && (
-                  <PlayCircleIcon className="w-6 h-6 text-green-400 flex-shrink-0" />
+                  <PlayCircleIcon className="w-5 h-5 md:w-6 md:h-6 text-green-400 flex-shrink-0" />
                 )}
               </button>
             );
