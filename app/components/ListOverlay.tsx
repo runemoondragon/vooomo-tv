@@ -32,6 +32,7 @@ interface ListOverlayProps {
     onChannelClick: (channel: Channel) => void;
     selectedChannelId?: string;
     isPlayerOpen: boolean;
+    targetCountryCode: string | null;
 }
 
 const ListOverlay: React.FC<ListOverlayProps> = ({ 
@@ -48,7 +49,8 @@ const ListOverlay: React.FC<ListOverlayProps> = ({
     onCountryClick,
     onChannelClick,
     selectedChannelId,
-    isPlayerOpen
+    isPlayerOpen,
+    targetCountryCode
 }) => {
   if (!isOpen) return null;
 
@@ -98,6 +100,7 @@ const ListOverlay: React.FC<ListOverlayProps> = ({
                     <CountryList 
                        onCountryClick={onCountryClick} 
                        onClose={onClose} // Pass onClose for internal header button (although header is hidden now)
+                       targetCountryCode={targetCountryCode}
                      />
                 ) : (
                     <ChannelList

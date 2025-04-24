@@ -266,6 +266,7 @@ export default function Home() {
          onCountryClick={handleCountryClick}
          onChannelClick={handleChannelClick}
          selectedChannelId={selectedChannel?.nanoid}
+         targetCountryCode={targetCountryCode}
       />
 
       {isLeftSidebarOpen && (
