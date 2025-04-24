@@ -3,7 +3,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { PlayCircleIcon } from '@heroicons/react/24/solid';
-import { XMarkIcon } from '@heroicons/react/24/outline';
+import { XMarkIcon, ArrowLeftIcon } from '@heroicons/react/24/outline';
 
 interface Channel {
   nanoid: string;
@@ -21,11 +21,12 @@ interface ChannelListProps {
   onChannelClick: (channel: Channel) => void;
   selectedChannelId?: string;
   onClose: () => void;
+  onBack: () => void;
   countryName?: string | null;
   capital?: string | null;
 }
 
-const ChannelList: React.FC<ChannelListProps> = ({ title, channels, onChannelClick, selectedChannelId, onClose, countryName, capital }) => {
+const ChannelList: React.FC<ChannelListProps> = ({ title, channels, onChannelClick, selectedChannelId, onClose, onBack, countryName, capital }) => {
   const displayTitle = countryName || title;
   // Capital city is now secondary info, channel count will be separate
   // const secondaryInfo = countryName && capital ? capital : `${channels.length} channels`; 
@@ -35,12 +36,23 @@ const ChannelList: React.FC<ChannelListProps> = ({ title, channels, onChannelCli
       {/* Header with Close button & Channel Count for mobile */}
       <div className="p-3 md:p-4 border-b border-gray-700 sticky top-0 bg-gray-900 z-10 flex items-center justify-between gap-2">
         {/* Left side: Title and Capital */}
-        <div className="flex-shrink min-w-0"> 
-          <h2 className="text-base md:text-lg font-semibold truncate" title={displayTitle}>{displayTitle}</h2>
-          {/* Show capital only if available */} 
-          {countryName && capital && (
-             <p className="text-xs md:text-sm text-gray-400 mt-1 truncate" title={capital}>{capital}</p>
-          )}
+        <div className="flex items-center gap-2 flex-shrink min-w-0">
+          {/* Back button - Desktop Sidebar Only */}
+          <button 
+            onClick={onBack} 
+            className="p-1 text-gray-400 hover:text-white hidden md:block"
+            aria-label="Back to countries"
+          >
+            <ArrowLeftIcon className="w-5 h-5" />
+          </button>
+          {/* Title/Capital container */}
+          <div className="flex-shrink min-w-0">
+            <h2 className="text-base md:text-lg font-semibold truncate" title={displayTitle}>{displayTitle}</h2>
+            {/* Show capital only if available */} 
+            {countryName && capital && (
+               <p className="text-xs md:text-sm text-gray-400 mt-1 truncate" title={capital}>{capital}</p>
+            )}
+          </div>
         </div>
         
         {/* Right side: Channel Count & Close Button */}
@@ -48,6 +60,8 @@ const ChannelList: React.FC<ChannelListProps> = ({ title, channels, onChannelCli
             <span className="text-xs md:text-sm text-gray-400 whitespace-nowrap">
                 {channels.length} channels
             </span>
+             {/* Close button removed - handled by overlay/player state */}
+            {/* 
             <button 
               onClick={onClose} 
               className="p-1 text-gray-400 hover:text-white md:hidden"
@@ -55,6 +69,7 @@ const ChannelList: React.FC<ChannelListProps> = ({ title, channels, onChannelCli
             >
               <XMarkIcon className="w-5 h-5" />
             </button>
+            */}
         </div>
       </div>
 

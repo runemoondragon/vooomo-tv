@@ -41,13 +41,16 @@ const CountryList: React.FC<CountryListProps> = ({ onCountryClick, onClose }) =>
       {/* Header with Close button for mobile */}
       <div className="p-4 border-b border-gray-700 sticky top-0 bg-gray-900 z-10 flex items-center justify-between">
         <h2 className="text-lg font-semibold">Select Country</h2>
+        {/* Close button removed - handled by overlay */}
+        {/* 
         <button 
            onClick={onClose} 
-           className="p-1 text-gray-400 hover:text-white md:hidden" // Only show on mobile
+           className="p-1 text-gray-400 hover:text-white md:hidden"
            aria-label="Close country list"
          >
            <XMarkIcon className="w-5 h-5" />
          </button>
+         */}
       </div>
 
       {/* Country List - Scrollable */}

@@ -6,13 +6,11 @@ import { DateTime } from 'luxon';
 import countryTz from 'country-tz';
 
 interface HeaderProps {
-  onBackToCountries: () => void;
-  showBackButton: boolean;
   targetCountryCode: string | null; // Added prop for country code
   onToggleLeftSidebar: () => void; // Function to toggle left sidebar
 }
 
-export default function Header({ onBackToCountries, showBackButton, targetCountryCode, onToggleLeftSidebar }: HeaderProps) {
+export default function Header({ targetCountryCode, onToggleLeftSidebar }: HeaderProps) {
   const [currentTime, setCurrentTime] = useState('');
   const [timeLabel, setTimeLabel] = useState('Local Time');
   const [timezone, setTimezone] = useState<string | null>(null);
@@ -79,16 +77,6 @@ export default function Header({ onBackToCountries, showBackButton, targetCountr
         <span className="text-xl font-semibold hidden sm:block">vooomoTV</span>
       </div>
       <div className="flex items-center gap-2 md:gap-4">
-        {showBackButton && (
-          <button
-            onClick={onBackToCountries}
-            className="flex items-center gap-1 px-2 py-1.5 md:px-3 rounded-lg hover:bg-gray-800 transition-colors"
-            title="Back to Countries"
-          >
-            <ArrowLeftIcon className="w-5 h-5" />
-            <span className="text-sm hidden sm:inline">Countries</span>
-          </button>
-        )}
         {/* Updated Time Display */}
         <div className="flex items-center gap-1 md:gap-2" title={timezone || 'System Timezone'}> 
           <span className="text-xs sm:text-sm text-gray-400 whitespace-nowrap">{timeLabel}</span>

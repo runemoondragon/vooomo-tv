@@ -74,26 +74,25 @@ export default function VideoPlayer({ streamUrl, onClose, channelName }: VideoPl
   }, [streamUrl]);
 
   return (
-    <div className="w-full h-full bg-black flex flex-col">
-      <div className="flex justify-between items-center p-2 bg-gray-800/50">
-        <h2 className="text-white text-lg font-semibold truncate" title={channelName}>
-          {channelName || 'Live Stream'}
-        </h2>
+    <div className="fixed top-16 left-0 right-0 z-30 flex justify-center px-2 md:left-64 md:right-80">
+      <div className="w-full max-w-[100vw] md:max-w-[calc(100vw-20rem)] aspect-video bg-black relative">
         <button
           onClick={onClose}
-          className="p-1 text-gray-300 hover:text-white transition-colors"
+          className="absolute top-2 right-2 z-40 p-1 bg-black/40 rounded-full text-white"
           title="Close Player"
+          aria-label="Close Player"
         >
-          <XMarkIcon className="w-6 h-6" />
+          <XMarkIcon className="w-5 h-5" />
         </button>
+        <video
+          ref={videoRef}
+          controls
+          className="w-full h-full object-contain bg-black"
+          playsInline
+          autoPlay
+        />
       </div>
-      <video
-        ref={videoRef}
-        controls
-        className="w-full flex-1 bg-black"
-        playsInline
-        autoPlay
-      />
     </div>
   );
+  
 } 
