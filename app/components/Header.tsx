@@ -1,67 +1,19 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { ArrowLeftIcon, Bars3Icon } from '@heroicons/react/24/outline';
-import { DateTime } from 'luxon';
-import countryTz from 'country-tz';
+import { Bars3Icon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 
 interface HeaderProps {
-  targetCountryCode: string | null; // Added prop for country code
-  onToggleLeftSidebar: () => void; // Function to toggle left sidebar
+  onToggleLeftSidebar: () => void;
+  searchTerm: string;
+  onSearchTermChange: (term: string) => void;
 }
 
-export default function Header({ targetCountryCode, onToggleLeftSidebar }: HeaderProps) {
-  const [currentTime, setCurrentTime] = useState('');
-  const [timeLabel, setTimeLabel] = useState('Local Time');
-  const [timezone, setTimezone] = useState<string | null>(null);
-
-  // Effect to determine timezone based on targetCountryCode
-  useEffect(() => {
-    let determinedTimezone: string | null = null;
-    let label = 'Local Time';
-
-    if (targetCountryCode) {
-      try {
-        // Try calling the default import directly as the function
-        const zones = countryTz(targetCountryCode);
-        if (zones && zones.length > 0) {
-          determinedTimezone = zones[0];
-          label = `Time in ${targetCountryCode.toUpperCase()}`;
-        } else {
-          console.warn(`No timezone found for country code: ${targetCountryCode}`);
-          label = 'Local Time';
-        }
-      } catch (error) {
-         console.error("Error calling country-tz:", error);
-         label = 'Local Time'; // Fallback on error
-      }
-    } else {
-      label = 'Local Time';
-    }
-
-    setTimezone(determinedTimezone);
-    setTimeLabel(label);
-
-  }, [targetCountryCode]);
-
-  // Effect to update the displayed time every minute
-  useEffect(() => {
-    const updateDisplayTime = () => {
-      const now = DateTime.now();
-      // Use the determined timezone state, or default to local system time
-      const displayDt = timezone ? now.setZone(timezone) : now.setZone(DateTime.local().zone);
-      
-      // Format: 5:58 PM (Offset optional)
-      const formattedTime = displayDt.toFormat('h:mm a'); 
-      // Maybe add ZZZZ for offset display: displayDt.toFormat('h:mm a ZZZZ')
-      setCurrentTime(formattedTime);
-    };
-
-    updateDisplayTime(); // Initial update
-    const interval = setInterval(updateDisplayTime, 60000); // Update every minute
-
-    return () => clearInterval(interval); // Cleanup interval
-  }, [timezone]); // Re-run timer setup if the timezone changes
+export default function Header({ 
+  onToggleLeftSidebar, 
+  searchTerm, 
+  onSearchTermChange 
+}: HeaderProps) {
 
   return (
     <header className="fixed top-0 left-0 right-0 h-14 bg-[#1e1e1e] text-white z-50 flex items-center justify-between px-2 md:px-4 border-b border-gray-800">
@@ -73,14 +25,22 @@ export default function Header({ targetCountryCode, onToggleLeftSidebar }: Heade
            aria-label="Open sidebar"
          >
            <Bars3Icon className="h-6 w-6 text-white" />
-        </button>
-        <span className="text-xl font-semibold hidden sm:block">vooomoTV</span>
+         </button>
+        {/* Show Title on Mobile OR Desktop */} 
+        <span className="text-xl font-semibold">Vooomo Tv</span> 
       </div>
-      <div className="flex items-center gap-2 md:gap-4">
-        {/* Updated Time Display */}
-        <div className="flex items-center gap-1 md:gap-2" title={timezone || 'System Timezone'}> 
-          <span className="text-xs sm:text-sm text-gray-400 whitespace-nowrap">{timeLabel}</span>
-          <span className="text-xs sm:text-sm text-gray-400 font-medium">{currentTime}</span>
+      <div className="flex items-center gap-2 flex-shrink-0 w-[180px] sm:w-[220px] md:w-[260px] lg:w-[300px]">
+ {/* Allow search to take more space */}
+         {/* Search Input */}
+        <div className="relative flex-grow">
+          <input
+            type="search"
+            placeholder="Search all channels.."
+            value={searchTerm}
+            onChange={(e) => onSearchTermChange(e.target.value)}
+            className="w-full pl-8 pr-2 py-1.5 bg-gray-700 border border-gray-600 rounded-md text-sm text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-green-500 focus:border-green-500"
+          />
+          <MagnifyingGlassIcon className="absolute left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
         </div>
       </div>
     </header>

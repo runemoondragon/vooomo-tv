@@ -179,8 +179,9 @@ export default function Home() {
   return (
     <div className="flex h-screen flex-col bg-black text-white overflow-hidden">
       <Header
-        targetCountryCode={targetCountryCode}
         onToggleLeftSidebar={toggleLeftSidebar}
+        searchTerm={searchTerm}
+        onSearchTermChange={handleSearchTermChange}
       />
 
       <div className="flex flex-1 overflow-hidden pt-14"> 
@@ -219,7 +220,11 @@ export default function Home() {
             }
           > 
             {rightSidebarView === 'countries' ? (
-              <CountryList onCountryClick={handleCountryClick} onClose={handleCloseRightView} />
+              <CountryList 
+                onCountryClick={handleCountryClick} 
+                onClose={handleCloseRightView} 
+                targetCountryCode={targetCountryCode}
+              />
             ) : ( 
               isLoadingList ? (
                  <div className="flex items-center justify-center h-full"><p>Loading...</p></div>

@@ -1,6 +1,6 @@
 {
-  "name": "VooomoTv",
-  "short_name": "VooomoTv",
+  "name": "Vooomo Tv",
+  "short_name": "Vooomo Tv",
   "description": "Watch TV Channels from all over the world",
   "start_url": "/",
   "display": "standalone",

@@ -57,7 +57,7 @@ const ListOverlay: React.FC<ListOverlayProps> = ({
 
   return (
     <div 
-      className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 flex flex-col justify-end md:hidden"
+      className="fixed inset-0 bg-transparent z-40 flex flex-col justify-end md:hidden"
       onClick={onClose} // Close on overlay click
     >
         <div 

@@ -3,7 +3,8 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image'; // Use Next Image for potential optimization
 import countriesMetadata from '../countries_metadata.json';
-import { XMarkIcon } from '@heroicons/react/24/outline'; // Import close icon
+import { DateTime } from 'luxon';
+import countryTz from 'country-tz';
 
 interface CountryMetadata {
   // Update to match the actual JSON structure
@@ -15,12 +16,53 @@ interface CountryMetadata {
 
 interface CountryListProps {
   onCountryClick: (countryCode: string) => void;
-  onClose: () => void; // Function to close the sidebar on mobile
+  onClose: () => void; // Keep for potential future use
+  targetCountryCode: string | null; // Add prop for time display
 }
 
-const CountryList: React.FC<CountryListProps> = ({ onCountryClick, onClose }) => {
+const CountryList: React.FC<CountryListProps> = ({ onCountryClick, onClose, targetCountryCode }) => {
   // Remove useState for countries, use metadata directly
   // const [countries, setCountries] = useState<CountryMetadata[]>([]);
+
+  // --- Time Display Logic (copied from Header) --- 
+  const [currentTime, setCurrentTime] = useState(''); 
+  const [timeLabel, setTimeLabel] = useState('Local Time'); 
+  const [timezone, setTimezone] = useState<string | null>(null); 
+
+  useEffect(() => {
+    let determinedTimezone: string | null = null;
+    let label = 'Local Time';
+    if (targetCountryCode) {
+      try {
+        const zones = countryTz(targetCountryCode);
+        if (zones && zones.length > 0) {
+          determinedTimezone = zones[0];
+          label = `Time in ${targetCountryCode.toUpperCase()}`;
+        } else {
+          label = 'Local Time';
+        }
+      } catch (error) {
+         label = 'Local Time';
+      }
+    } else {
+      label = 'Local Time';
+    }
+    setTimezone(determinedTimezone);
+    setTimeLabel(label);
+  }, [targetCountryCode]);
+
+  useEffect(() => {
+    const updateDisplayTime = () => {
+      const now = DateTime.now();
+      const displayDt = timezone ? now.setZone(timezone) : now.setZone(DateTime.local().zone);
+      const formattedTime = displayDt.toFormat('h:mm a'); 
+      setCurrentTime(formattedTime);
+    };
+    updateDisplayTime();
+    const interval = setInterval(updateDisplayTime, 60000);
+    return () => clearInterval(interval);
+  }, [timezone]);
+  // --- End Time Display Logic ---
 
   // Sort countries alphabetically using the correct property
   const sortedCountries = useMemo(() => {
@@ -38,19 +80,14 @@ const CountryList: React.FC<CountryListProps> = ({ onCountryClick, onClose }) =>
   return (
     // Use full height and make list scrollable
     <div className="w-full h-full bg-gray-900 text-white flex flex-col">
-      {/* Header with Close button for mobile */}
+      {/* Header with Time Display */}
       <div className="p-4 border-b border-gray-700 sticky top-0 bg-gray-900 z-10 flex items-center justify-between">
         <h2 className="text-lg font-semibold">Select Country</h2>
-        {/* Close button removed - handled by overlay */}
-        {/* 
-        <button 
-           onClick={onClose} 
-           className="p-1 text-gray-400 hover:text-white md:hidden"
-           aria-label="Close country list"
-         >
-           <XMarkIcon className="w-5 h-5" />
-         </button>
-         */}
+        {/* Time Display */}
+        <div className="flex items-center gap-1 md:gap-2 text-xs sm:text-sm" title={timezone || 'System Timezone'}> 
+          <span className="text-gray-400 whitespace-nowrap">{timeLabel}</span>
+          <span className="text-gray-400 font-medium">{currentTime}</span>
+        </div>
       </div>
 
       {/* Country List - Scrollable */}
