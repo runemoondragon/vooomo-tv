@@ -103,7 +103,7 @@ export default function VideoPlayer({ streamUrl, onClose, channelName }: VideoPl
     <img src="/ads/ad2.jpg" alt="Ad 2" className="w-full max-w-[400px] h-[90px] object-cover rounded-md shadow-md" />
   </a>
   <a href="https://amzn.to/3GDSg4D" target="_blank" rel="noopener noreferrer">
-    <img src="/ads/ad3.jpg" alt="Ad 3" className="w-full max-w-[400px] h-[90px] object-cover rounded-md shadow-md" />
+    <img src="/ads/ad3.JPG" alt="Ad 3" className="w-full max-w-[400px] h-[90px] object-cover rounded-md shadow-md" />
   </a>
 </div>
 
