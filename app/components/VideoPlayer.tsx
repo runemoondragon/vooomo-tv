@@ -74,7 +74,8 @@ export default function VideoPlayer({ streamUrl, onClose, channelName }: VideoPl
   }, [streamUrl]);
 
   return (
-    <div className="fixed top-16 left-0 right-0 z-30 flex justify-center px-2 md:left-64 md:right-80">
+    <div className="fixed top-16 left-0 right-0 z-30 flex flex-col items-center gap-4 px-2 md:left-64 md:right-80">
+      {/* Video Player */}
       <div className="w-full max-w-[100vw] md:max-w-[calc(100vw-20rem)] aspect-video bg-black relative">
         <button
           onClick={onClose}
@@ -92,7 +93,26 @@ export default function VideoPlayer({ streamUrl, onClose, channelName }: VideoPl
           autoPlay
         />
       </div>
+
+      {/* Desktop Ad Banners */}
+      <div className="hidden md:flex justify-between items-center gap-4 w-full max-w-[calc(100vw-20rem)] px-2">
+  <a href="https://amzn.to/4iwwoFC" target="_blank" rel="noopener noreferrer">
+    <img src="/ads/ad1.jpg" alt="Ad 1" className="w-full max-w-[400px] h-[90px] object-cover rounded-md shadow-md" />
+  </a>
+  <a href="https://amzn.to/448nvyL" target="_blank" rel="noopener noreferrer">
+    <img src="/ads/ad2.jpg" alt="Ad 2" className="w-full max-w-[400px] h-[90px] object-cover rounded-md shadow-md" />
+  </a>
+  <a href="https://amzn.to/3GDSg4D" target="_blank" rel="noopener noreferrer">
+    <img src="/ads/ad3.jpg" alt="Ad 3" className="w-full max-w-[400px] h-[90px] object-cover rounded-md shadow-md" />
+  </a>
+</div>
+
+      {/* Mobile Ad Banner */}
+      <div className="md:hidden w-full max-w-md px-3">
+      <a href="https://amzn.to/3YKJPuC" target="_blank" rel="noopener noreferrer">
+    <img src="/ads/mb1.jpg" alt="Mobile Ad" className="w-full max-w-[400px] h-[90px] object-cover rounded-md shadow" />
+  </a>
+      </div>
     </div>
   );
-  
-} 
+}
