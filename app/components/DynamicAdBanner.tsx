@@ -18,7 +18,8 @@ interface Ad {
   affiliate_link: string;
 }
 
-const getRandomAds = (adList: Ad[], count: number): Ad[] => {
+const getUniqueRandomAds = (adList: Ad[], count: number): Ad[] => {
+  if (adList.length <= count) return adList;
   const shuffled = [...adList].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
 };
@@ -26,13 +27,15 @@ const getRandomAds = (adList: Ad[], count: number): Ad[] => {
 const DynamicAdBanner: React.FC = () => {
   const [ads, setAds] = useState<Ad[]>([]);
   const [currentAds, setCurrentAds] = useState<Ad[]>([]);
+  const [fade, setFade] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     fetch('/ads_metadata.json')
       .then((res) => res.json())
       .then((data) => {
         setAds(data);
-        setCurrentAds(getRandomAds(data, 3));
+        setCurrentAds(getUniqueRandomAds(data, 3));
       })
       .catch((err) => console.error('Failed to load ad metadata:', err));
   }, []);
@@ -41,15 +44,21 @@ const DynamicAdBanner: React.FC = () => {
     if (ads.length === 0) return;
 
     const interval = setInterval(() => {
-      setCurrentAds(getRandomAds(ads, 3));
-    }, 45000); // Rotate every 45 seconds
+      setFade(true); // Start fade out
+      setLoading(true); // Start spinner
+
+      setTimeout(() => {
+        setCurrentAds(getUniqueRandomAds(ads, 3)); // Rotate ads
+        setFade(false); // Fade back in
+        setLoading(false); // Hide spinner
+      }, 400); // Timing matches fade animation
+    }, 25000);
 
     return () => clearInterval(interval);
   }, [ads]);
 
   if (currentAds.length === 0) return null;
 
-  // 👇 Separate handler: trigger PiP before link opens
   const handlePictureInPicture = () => {
     try {
       const videoElement = document.querySelector('video');
@@ -63,8 +72,15 @@ const DynamicAdBanner: React.FC = () => {
 
   return (
     <>
-      {/* Desktop: show 3 ads side by side */}
-      <div className="hidden md:flex justify-between gap-4 w-full max-w-[calc(100vw-20rem)] px-2">
+      {/* Desktop View */}
+      <div
+        className={`relative hidden md:flex justify-between gap-4 w-full max-w-[calc(100vw-20rem)] px-2 transition-opacity duration-500 ${fade ? 'opacity-0' : 'opacity-100'}`}
+      >
+        {loading && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-md">
+            <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-green-500"></div>
+          </div>
+        )}
         {currentAds.map((ad, index) => (
           <a
             key={index}
@@ -85,12 +101,17 @@ const DynamicAdBanner: React.FC = () => {
         ))}
       </div>
 
-      {/* Mobile: show only 1 ad, trigger PiP cleanly */}
-      <div className="md:hidden w-full max-w-md px-3">
+      {/* Mobile View */}
+      <div className="relative md:hidden w-full max-w-md px-3">
         <div
-          onClickCapture={handlePictureInPicture} // 🛡️ use capture to trigger before link open
-          className="block w-full h-[120px]"
+          onClickCapture={handlePictureInPicture}
+          className={`block w-full h-[120px] transition-opacity duration-500 ${fade ? 'opacity-0' : 'opacity-100'}`}
         >
+          {loading && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-md">
+              <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-green-500"></div>
+            </div>
+          )}
           <a
             href={currentAds[0].affiliate_link}
             target="_blank"
