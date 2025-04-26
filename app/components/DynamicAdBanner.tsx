@@ -42,12 +42,25 @@ const DynamicAdBanner: React.FC = () => {
 
     const interval = setInterval(() => {
       setCurrentAds(getRandomAds(ads, 3));
-    }, 10000);
+    }, 45000); // Rotate every 45 seconds
 
     return () => clearInterval(interval);
   }, [ads]);
 
   if (currentAds.length === 0) return null;
+
+  // 👇 This function handles PiP mode on mobile
+  const handleMobileAdClick = async (link: string) => {
+    try {
+      const videoElement = document.querySelector('video');
+      if (videoElement && (document as any).pictureInPictureEnabled && !document.pictureInPictureElement) {
+        await (videoElement as any).requestPictureInPicture();
+      }
+    } catch (error) {
+      console.error('Failed to enter PiP mode:', error);
+    }
+    window.open(link, '_blank');
+  };
 
   return (
     <>
@@ -64,7 +77,7 @@ const DynamicAdBanner: React.FC = () => {
             <Image
               src={`/${ad.image_file}`}
               alt={ad.product_name}
-              width={400}
+              width={450}
               height={110}
               className="object-cover w-full h-full rounded-md shadow-md"
               priority
@@ -73,23 +86,21 @@ const DynamicAdBanner: React.FC = () => {
         ))}
       </div>
 
-      {/* Mobile: show first of the 3 ads only */}
+      {/* Mobile: show only 1 ad, with PiP activation on click */}
       <div className="md:hidden w-full max-w-md px-3">
-        <a
-          href={currentAds[0].affiliate_link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block w-full h-[120px]"
+        <div
+          onClick={() => handleMobileAdClick(currentAds[0].affiliate_link)}
+          className="block w-full h-[120px] cursor-pointer"
         >
           <Image
             src={`/${currentAds[0].image_file}`}
             alt={currentAds[0].product_name}
-            width={400}
+            width={500}
             height={110}
             className="object-cover w-full h-full rounded-md shadow-md"
             priority
           />
-        </a>
+        </div>
       </div>
     </>
   );

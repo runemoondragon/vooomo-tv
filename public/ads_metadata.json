@@ -125,7 +125,49 @@
           "tags": ["cat", "smart", "fountain", "app-connected", "multi-cat", "RFID"]
         },
         "affiliate_link": "https://www.amazon.com/PETLIBRO-Dockstream-Monitoring-Automatic-Dispenser/dp/B0D6RRQR9L?th=1&linkCode=ll1&tag=matter019-20&linkId=86beee6c6f64b6b71b32ff315ecbf9ea&language=en_US&ref_=as_li_ss_tl"
-      }      
+      },
+      {
+        "product_name": "Sonos Era 300 Wireless Smart Speaker with Dolby Atmos",
+        "image_file": "ads/Sonos_Era300.jpg",
+        "image_url": "https://m.media-amazon.com/images/I/51p+QGWUt+L._AC_SL1500_.jpg",
+        "metadata": {
+          "category": "Electronics",
+          "brand": "Sonos",
+          "price": "$449.00",
+          "tv_channel": "Discovery",
+          "country": "US",
+          "tags": ["speaker", "wireless", "smart", "Dolby Atmos", "Sonos", "home audio"]
+        },
+        "affiliate_link": "https://www.amazon.com/Sonos-Era-300-Wireless-Speaker/dp/B0BW2LV57K?_encoding=UTF8&pd_rd_w=2XeML&content-id=amzn1.sym.9542e137-8ad7-4a98-a1c4-fd729ecd1f5f&pf_rd_p=9542e137-8ad7-4a98-a1c4-fd729ecd1f5f&pf_rd_r=ASDGKXS07KJ22YKWM34X&pd_rd_wg=g91ej&pd_rd_r=f12c5f7b-2c1e-4014-91b8-49fc0c9f4c2f&th=1&linkCode=ll1&tag=matter019-20&linkId=6f053a728fcf73cf702dfae176b40c58&language=en_US&ref_=as_li_ss_tl"
+      },
+      {
+        "product_name": "EPICKA Universal Travel Adapter with USB-C",
+        "image_file": "ads/EPICKA_TravelAdapter.jpg",
+        "image_url": "https://m.media-amazon.com/images/I/71AE2vn9UQL._AC_SL1500_.jpg",
+        "metadata": {
+          "category": "Travel Accessories",
+          "brand": "EPICKA",
+          "price": "$19.99",
+          "tv_channel": "Discovery",
+          "country": "US",
+          "tags": ["travel", "adapter", "charger", "USB-C", "international", "portable"]
+        },
+        "affiliate_link": "https://www.amazon.com/EPICKA-Universal-Travel-Adapter-Power/dp/B078S3M2NX?pd_rd_w=DwPWm&content-id=amzn1.sym.7379aab7-0dd8-4729-b0b5-2074f1cb413d&pf_rd_p=7379aab7-0dd8-4729-b0b5-2074f1cb413d&pf_rd_r=8XNZKT14YK1F1MKTKTHH&pd_rd_wg=RO57t&pd_rd_r=cf34d4da-5f2f-4687-892f-2fa34168debf&pd_rd_i=B0DR8W244F&th=1&linkCode=ll1&tag=matter019-20&linkId=904efe1836bbe0fceea737dd29c28bd1&language=en_US&ref_=as_li_ss_tl"
+      },
+      {
+        "product_name": "CRZ YOGA Women's Classic Leggings",
+        "image_file": "ads/CRZYOGA_Leggings.jpg",
+        "image_url": "https://m.media-amazon.com/images/I/61iO4BpDN6L._AC_SL1500_.jpg",
+        "metadata": {
+          "category": "Clothing",
+          "brand": "CRZ YOGA",
+          "price": "$36.00",
+          "tv_channel": "Discovery",
+          "country": "US",
+          "tags": ["leggings", "yoga", "womenswear", "fitness", "activewear"]
+        },
+        "affiliate_link": "https://www.amazon.com/CRZ-YOGA-Womens-Butterluxe-Leggings/dp/B07ZCR4SSH?pd_rd_w=mTlG9&content-id=amzn1.sym.7379aab7-0dd8-4729-b0b5-2074f1cb413d&pf_rd_p=7379aab7-0dd8-4729-b0b5-2074f1cb413d&pf_rd_r=R0JWTFM4P55VXSCZZ1XB&pd_rd_wg=hcTfg&pd_rd_r=7127e8fc-e05d-41ad-b5c7-25f86a5fc583&pd_rd_i=B0CSMZXTGV&th=1&psc=1&linkCode=ll1&tag=matter019-20&linkId=849b7e8a39d5c48040146ac0046284c1&language=en_US&ref_=as_li_ss_tl"
+      }                   
       
             
   ]
