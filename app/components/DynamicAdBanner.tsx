@@ -1,0 +1,98 @@
+'use client';
+
+import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
+
+interface Ad {
+  product_name: string;
+  image_file: string;
+  image_url: string;
+  metadata: {
+    category: string;
+    brand: string;
+    price: string;
+    tv_channel: string;
+    country: string;
+    tags: string[];
+  };
+  affiliate_link: string;
+}
+
+const getRandomAds = (adList: Ad[], count: number): Ad[] => {
+  const shuffled = [...adList].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+};
+
+const DynamicAdBanner: React.FC = () => {
+  const [ads, setAds] = useState<Ad[]>([]);
+  const [currentAds, setCurrentAds] = useState<Ad[]>([]);
+
+  useEffect(() => {
+    fetch('/ads_metadata.json')
+      .then((res) => res.json())
+      .then((data) => {
+        setAds(data);
+        setCurrentAds(getRandomAds(data, 3));
+      })
+      .catch((err) => console.error('Failed to load ad metadata:', err));
+  }, []);
+
+  useEffect(() => {
+    if (ads.length === 0) return;
+
+    const interval = setInterval(() => {
+      setCurrentAds(getRandomAds(ads, 3));
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, [ads]);
+
+  if (currentAds.length === 0) return null;
+
+  return (
+    <>
+      {/* Desktop: show 3 ads side by side */}
+      <div className="hidden md:flex justify-between gap-4 w-full max-w-[calc(100vw-20rem)] px-2">
+        {currentAds.map((ad, index) => (
+          <a
+            key={index}
+            href={ad.affiliate_link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full max-w-[300px] h-[90px] flex-shrink-0"
+          >
+            <Image
+              src={`/${ad.image_file}`}
+              alt={ad.product_name}
+              width={400}
+              height={110}
+              className="object-cover w-full h-full rounded-md shadow-md"
+              priority
+            />
+          </a>
+        ))}
+      </div>
+
+      {/* Mobile: show first of the 3 ads only */}
+      <div className="md:hidden w-full max-w-md px-3">
+        <a
+          href={currentAds[0].affiliate_link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block w-full h-[120px]"
+        >
+          <Image
+            src={`/${currentAds[0].image_file}`}
+            alt={currentAds[0].product_name}
+            width={400}
+            height={110}
+            className="object-cover w-full h-full rounded-md shadow-md"
+            priority
+          />
+        </a>
+      </div>
+    </>
+  );
+};
+
+export default DynamicAdBanner;

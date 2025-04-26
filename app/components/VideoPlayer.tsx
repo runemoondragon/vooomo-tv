@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import Hls from 'hls.js';
 import { XMarkIcon } from '@heroicons/react/24/outline';
+import DynamicAdBanner from './DynamicAdBanner';
 
 interface VideoPlayerProps {
   streamUrl: string;
@@ -94,25 +95,16 @@ export default function VideoPlayer({ streamUrl, onClose, channelName }: VideoPl
         />
       </div>
 
-      {/* Desktop Ad Banners */}
-      <div className="hidden md:flex justify-between items-center gap-4 w-full max-w-[calc(100vw-20rem)] px-2">
-  <a href="https://amzn.to/4iwwoFC" target="_blank" rel="noopener noreferrer">
-    <img src="/ads/ad1.jpg" alt="Ad 1" className="w-full max-w-[400px] h-[90px] object-cover rounded-md shadow-md" />
-  </a>
-  <a href="https://amzn.to/448nvyL" target="_blank" rel="noopener noreferrer">
-    <img src="/ads/ad2.jpg" alt="Ad 2" className="w-full max-w-[400px] h-[90px] object-cover rounded-md shadow-md" />
-  </a>
-  <a href="https://amzn.to/3GDSg4D" target="_blank" rel="noopener noreferrer">
-    <img src="/ads/ad3.JPG" alt="Ad 3" className="w-full max-w-[400px] h-[90px] object-cover rounded-md shadow-md" />
-  </a>
+      {/* Desktop Ad Banners - All handled inside DynamicAdBanner */}
+<div className="hidden md:flex justify-between items-center gap-4 w-full max-w-[calc(100vw-20rem)] px-2">
+  <DynamicAdBanner />
 </div>
 
-      {/* Mobile Ad Banner */}
-      <div className="md:hidden w-full max-w-md px-3">
-      <a href="https://amzn.to/3YKJPuC" target="_blank" rel="noopener noreferrer">
-    <img src="/ads/mb1.jpg" alt="Mobile Ad" className="w-full max-w-[400px] h-[90px] object-cover rounded-md shadow" />
-  </a>
-      </div>
+{/* Mobile Ad Banner - Also handled inside DynamicAdBanner */}
+<div className="md:hidden w-full max-w-md px-3">
+  <DynamicAdBanner />
+</div>
+
     </div>
   );
 }

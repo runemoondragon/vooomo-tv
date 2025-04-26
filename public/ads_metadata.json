@@ -1,0 +1,132 @@
+[
+    {
+      "product_name": "Engage Pursuit Pro1 6.0 Pickleball Paddle - Arctic Gold",
+      "image_file": "ads/ad3.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71s5kZpF1xL._AC_SL1500_.jpg",
+      "metadata": {
+        "category": "Sports & Outdoors",
+        "brand": "Engage Pickleball",
+        "price": "$199.99",
+        "tv_channel": "ESPN",
+        "country": "US",
+        "tags": ["pickleball", "paddle", "carbon fiber", "sports", "gear"]
+      },
+      "affiliate_link": "https://amzn.to/4iCxNuq"
+    },
+
+    {
+      "product_name": "Gevi Household V2.0 Countertop Nugget Ice Maker",
+      "image_file": "ads/ad1.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61N1pC3lZXL._AC_SL1500_.jpg",
+      "metadata": {
+        "category": "Home Appliances",
+        "brand": "Gevi",
+        "price": "$448.00",
+        "tv_channel": "Food Network",
+        "country": "US",
+        "tags": ["ice maker", "kitchen", "home appliance"]
+      },
+      "affiliate_link": "https://amzn.to/4iyXXhw"
+    },
+    {
+      "product_name": "FAFAFROG Dog Bark Collar",
+      "image_file": "ads/ad2.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71X6g0kY7lL._AC_SL1500_.jpg",
+      "metadata": {
+        "category": "Pet Supplies",
+        "brand": "FAFAFROG",
+        "price": "$35.99",
+        "tv_channel": "Animal Planet",
+        "country": "US",
+        "tags": ["dog collar", "pet training", "anti-bark"]
+      },
+      "affiliate_link": "https://amzn.to/4jQXNDr"
+    },
+    {
+      "product_name": "Selkirk Sport SLK Atlas Max Pickleball Paddle Set",
+      "image_file": "ads/selkirk.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71lV6rYxHGL._AC_SL1500_.jpg",
+      "metadata": {
+        "category": "Sports & Outdoors",
+        "brand": "Selkirk Sport",
+        "price": "$99.99",
+        "tv_channel": "ESPN",
+        "country": "US",
+        "tags": ["pickleball", "sports", "outdoor games"]
+      },
+      "affiliate_link": "https://amzn.to/42ZCgTk"
+    },
+    {
+      "product_name": "Sony ZX Series Wired On-Ear Headphones",
+      "image_file": "ads/sony-zx110-headphones.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61CqYq+Yz-L._AC_SL1500_.jpg",
+      "metadata": {
+        "category": "Electronics",
+        "brand": "Sony",
+        "price": "$12.88",
+        "tv_channel": "MTV",
+        "country": "US",
+        "tags": ["headphones", "audio", "electronics"]
+      },
+      "affiliate_link": "https://amzn.to/3EAvOsK"
+    },
+    {
+        "product_name": "Dell P2219H 21.5-inch Full HD IPS Display (Renewed)",
+        "image_file": "ads/DellP2219H_Dell.jpg",
+        "image_url": "https://m.media-amazon.com/images/I/71EFbZ1r4xL._AC_SL1500_.jpg",
+        "metadata": {
+          "category": "Electronics",
+          "brand": "Dell",
+          "price": "$64.99",
+          "tv_channel": "Discovery",
+          "country": "US",
+          "tags": ["monitor", "display", "electronics", "renewed"]
+        },
+        "affiliate_link": "https://www.amazon.com/Dell-Screen-LED-Lit-Monitor-Renewed/dp/B07TKN7K2W?pd_rd_w=RvF4n&content-id=amzn1.sym.7379aab7-0dd8-4729-b0b5-2074f1cb413d&pf_rd_p=7379aab7-0dd8-4729-b0b5-2074f1cb413d&pf_rd_r=KTDF1P2W2MSFEKFSKCPV&pd_rd_wg=hD28c&pd_rd_r=9249d245-511d-4adc-ab72-d0d7c921665d&pd_rd_i=B07TKN7K2W&psc=1&linkCode=ll1&tag=matter019-20&linkId=70afdc5345f10fab2f828ff532df39ac&language=en_US&ref_=as_li_ss_tl"
+      },
+      {
+        "product_name": "Samsung 27-in S39C Series FHD Curved Gaming Monitor (2023)",
+        "image_file": "ads/CHIFENCHY_Speaker.jpg",
+        "image_url": "https://m.media-amazon.com/images/I/81H4fT2FxnL._AC_SL1500_.jpg",
+        "metadata": {
+          "category": "Electronics",
+          "brand": "Samsung",
+          "price": "$139.99",
+          "tv_channel": "Discovery",
+          "country": "US",
+          "tags": ["monitor", "curved", "gaming", "display"]
+        },
+        "affiliate_link": "https://amzn.to/3YgqaTh"
+      },
+      {
+        "product_name": "CHIFENCHY Portable Bluetooth Speaker with Lights",
+        "image_file": "ads/CHIFENCHY_Speaker.jpg",
+        "image_url": "https://m.media-amazon.com/images/I/71FG7fJ8ekL._AC_SL1500_.jpg",
+        "metadata": {
+          "category": "Electronics",
+          "brand": "CHIFENCHY",
+          "price": "$39.99",
+          "tv_channel": "Discovery",
+          "country": "US",
+          "tags": ["bluetooth", "speaker", "portable", "waterproof", "outdoor", "gift"]
+        },
+        "affiliate_link": "https://www.amazon.com/CHIFENCHY-Portable-Bluetooth-Powerful-Waterproof/dp/B0CX1FRR27?pd_rd_w=G6b55&content-id=amzn1.sym.7379aab7-0dd8-4729-b0b5-2074f1cb413d&pf_rd_p=7379aab7-0dd8-4729-b0b5-2074f1cb413d&pf_rd_r=ZEYBMACS3QXZBKGTXCA2&pd_rd_wg=UnDGx&pd_rd_r=067da312-9ce2-466e-af74-f8840e460294&pd_rd_i=B0CX1FRR27&th=1&linkCode=ll1&tag=matter019-20&linkId=b305f66a75a8571884fec942b2fe6747&language=en_US&ref_=as_li_ss_tl"
+      },
+      {
+        "product_name": "PETLIBRO Dockstream Smart Cat Fountain with RFID & App Monitoring",
+        "image_file": "ads/PETLIBRO_Fountain.jpg",
+        "image_url": "https://m.media-amazon.com/images/I/61obHS9XTaL._AC_SL1500_.jpg",
+        "metadata": {
+          "category": "Pet Supplies",
+          "brand": "PETLIBRO",
+          "price": "$69.99",
+          "tv_channel": "Animal Planet",
+          "country": "US",
+          "tags": ["cat", "smart", "fountain", "app-connected", "multi-cat", "RFID"]
+        },
+        "affiliate_link": "https://www.amazon.com/PETLIBRO-Dockstream-Monitoring-Automatic-Dispenser/dp/B0D6RRQR9L?th=1&linkCode=ll1&tag=matter019-20&linkId=86beee6c6f64b6b71b32ff315ecbf9ea&language=en_US&ref_=as_li_ss_tl"
+      }      
+      
+            
+  ]
+  
