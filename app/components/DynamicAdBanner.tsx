@@ -49,17 +49,16 @@ const DynamicAdBanner: React.FC = () => {
 
   if (currentAds.length === 0) return null;
 
-  // 👇 This function handles PiP mode on mobile
-  const handleMobileAdClick = async (link: string) => {
+  // 👇 Separate handler: trigger PiP before link opens
+  const handlePictureInPicture = () => {
     try {
       const videoElement = document.querySelector('video');
       if (videoElement && (document as any).pictureInPictureEnabled && !document.pictureInPictureElement) {
-        await (videoElement as any).requestPictureInPicture();
+        (videoElement as any).requestPictureInPicture();
       }
     } catch (error) {
       console.error('Failed to enter PiP mode:', error);
     }
-    window.open(link, '_blank');
   };
 
   return (
@@ -86,20 +85,27 @@ const DynamicAdBanner: React.FC = () => {
         ))}
       </div>
 
-      {/* Mobile: show only 1 ad, with PiP activation on click */}
+      {/* Mobile: show only 1 ad, trigger PiP cleanly */}
       <div className="md:hidden w-full max-w-md px-3">
         <div
-          onClick={() => handleMobileAdClick(currentAds[0].affiliate_link)}
-          className="block w-full h-[120px] cursor-pointer"
+          onClickCapture={handlePictureInPicture} // 🛡️ use capture to trigger before link open
+          className="block w-full h-[120px]"
         >
-          <Image
-            src={`/${currentAds[0].image_file}`}
-            alt={currentAds[0].product_name}
-            width={500}
-            height={110}
-            className="object-cover w-full h-full rounded-md shadow-md"
-            priority
-          />
+          <a
+            href={currentAds[0].affiliate_link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full h-[120px]"
+          >
+            <Image
+              src={`/${currentAds[0].image_file}`}
+              alt={currentAds[0].product_name}
+              width={500}
+              height={110}
+              className="object-cover w-full h-full rounded-md shadow-md"
+              priority
+            />
+          </a>
         </div>
       </div>
     </>
