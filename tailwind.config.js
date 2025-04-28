@@ -10,7 +10,10 @@ module.exports = {
       colors: {
         primary: '#3B82F6', // blue-500
       },
+      screens: {
+        'tablet': '1024px', // NEW custom breakpoint for tablets
+      },
     },
   },
   plugins: [],
-} 
+}

@@ -44,14 +44,14 @@ const DynamicAdBanner: React.FC = () => {
     if (ads.length === 0) return;
 
     const interval = setInterval(() => {
-      setFade(true); // Start fade out
-      setLoading(true); // Start spinner
+      setFade(true);
+      setLoading(true);
 
       setTimeout(() => {
-        setCurrentAds(getUniqueRandomAds(ads, 3)); // Rotate ads
-        setFade(false); // Fade back in
-        setLoading(false); // Hide spinner
-      }, 400); // Timing matches fade animation
+        setCurrentAds(getUniqueRandomAds(ads, 3));
+        setFade(false);
+        setLoading(false);
+      }, 400);
     }, 25000);
 
     return () => clearInterval(interval);
@@ -72,9 +72,9 @@ const DynamicAdBanner: React.FC = () => {
 
   return (
     <>
-      {/* Desktop View */}
+      {/* Desktop & iPad: 3 ads side by side but responsive */}
       <div
-        className={`relative hidden md:flex justify-between gap-4 w-full max-w-[calc(100vw-20rem)] px-2 transition-opacity duration-500 ${fade ? 'opacity-0' : 'opacity-100'}`}
+        className={`relative hidden md:flex flex-wrap justify-center gap-4 w-full px-2 transition-opacity duration-500 ${fade ? 'opacity-0' : 'opacity-100'}`}
       >
         {loading && (
           <div className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-md">
@@ -87,7 +87,7 @@ const DynamicAdBanner: React.FC = () => {
             href={ad.affiliate_link}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full max-w-[300px] h-[90px] flex-shrink-0"
+            className="w-[30%] min-w-[200px] max-w-[300px] h-[90px] flex-shrink-0"
           >
             <Image
               src={`/${ad.image_file}`}
@@ -101,7 +101,7 @@ const DynamicAdBanner: React.FC = () => {
         ))}
       </div>
 
-      {/* Mobile View */}
+      {/* Mobile: show 1 ad only */}
       <div className="relative md:hidden w-full max-w-md px-3">
         <div
           onClickCapture={handlePictureInPicture}
