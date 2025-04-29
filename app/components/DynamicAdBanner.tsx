@@ -52,7 +52,7 @@ const DynamicAdBanner: React.FC = () => {
         setFade(false);
         setLoading(false);
       }, 400);
-    }, 25000);
+    }, 20000);
 
     return () => clearInterval(interval);
   }, [ads]);
@@ -93,7 +93,7 @@ const DynamicAdBanner: React.FC = () => {
               src={`/${ad.image_file}`}
               alt={ad.product_name}
               width={450}
-              height={110}
+              height={125}
               className="object-cover w-full h-full rounded-md shadow-md"
               priority
             />

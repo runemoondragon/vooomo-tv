@@ -86,7 +86,7 @@
       },
       {
         "product_name": "Samsung 27-in S39C Series FHD Curved Gaming Monitor (2023)",
-        "image_file": "ads/DellP2219H_Dell.jpg",
+        "image_file": "ads/sum.jpg",
         "image_url": "https://m.media-amazon.com/images/I/81H4fT2FxnL._AC_SL1500_.jpg",
         "metadata": {
           "category": "Electronics",
@@ -167,7 +167,49 @@
           "tags": ["leggings", "yoga", "womenswear", "fitness", "activewear"]
         },
         "affiliate_link": "https://www.amazon.com/CRZ-YOGA-Womens-Butterluxe-Leggings/dp/B07ZCR4SSH?pd_rd_w=mTlG9&content-id=amzn1.sym.7379aab7-0dd8-4729-b0b5-2074f1cb413d&pf_rd_p=7379aab7-0dd8-4729-b0b5-2074f1cb413d&pf_rd_r=R0JWTFM4P55VXSCZZ1XB&pd_rd_wg=hcTfg&pd_rd_r=7127e8fc-e05d-41ad-b5c7-25f86a5fc583&pd_rd_i=B0CSMZXTGV&th=1&psc=1&linkCode=ll1&tag=matter019-20&linkId=849b7e8a39d5c48040146ac0046284c1&language=en_US&ref_=as_li_ss_tl"
-      }                   
+      },
+      {
+        "product_name": "BandD Levitating Plant Pot - Magnetic Floating Display",
+        "image_file": "ads/BandD_LevitatingPot.jpg",
+        "image_url": "https://m.media-amazon.com/images/I/61QtbZQ2QnL._AC_SL1500_.jpg",
+        "metadata": {
+          "category": "Home & Garden",
+          "brand": "BandD",
+          "price": "$66.99",
+          "tv_channel": "HGTV",
+          "country": "US",
+          "tags": ["plant", "levitating", "decor", "floating", "home", "modern"]
+        },
+        "affiliate_link": "https://www.amazon.com/BandD-Floating-Plant-Pot-Levitating/dp/B091WYF4XF?pd_rd_w=OTLPZ&content-id=amzn1.sym.6892fc2a-5f26-4664-922f-5f7621402965&pf_rd_p=6892fc2a-5f26-4664-922f-5f7621402965&pf_rd_r=4BEXWSX8ME2FB8B4TW1T&pd_rd_wg=N9Qv1&pd_rd_r=438c4198-054d-4c6c-b6ac-8a63452a707c&pd_rd_i=B091WYF4XF&th=1&linkCode=ll1&tag=matter019-20&linkId=84dc3fae8fd3847bd224f3b5898011b7&language=en_US&ref_=as_li_ss_tl"
+      },
+      {
+        "product_name": "HP Victus 15.6\" Laptop - RTX 2050, 144Hz FHD, i5-12450H",
+        "image_file": "ads/HP_Victus15.jpg",
+        "image_url": "https://m.media-amazon.com/images/I/71q0UjMLgGL._AC_SL1500_.jpg",
+        "metadata": {
+          "category": "Electronics",
+          "brand": "HP",
+          "price": "$799.99",
+          "tv_channel": "ESPN",
+          "country": "US",
+          "tags": ["laptop", "gaming", "HP", "RTX2050", "144Hz", "Windows 11"]
+        },
+        "affiliate_link": "https://www.amazon.com/HP-Display-i5-12450H-Dedicated-15-fa1029nr/dp/B0CVNJ7LLN?pd_rd_w=rrjCB&content-id=amzn1.sym.7379aab7-0dd8-4729-b0b5-2074f1cb413d&pf_rd_p=7379aab7-0dd8-4729-b0b5-2074f1cb413d&pf_rd_r=GMVKE3T899EG7QH806Y4&pd_rd_wg=nvK7m&pd_rd_r=856e1745-9117-481e-9986-c87e196e4090&pd_rd_i=B0CVNJ7LLN&psc=1&linkCode=ll1&tag=matter019-20&linkId=f4837b4e5369e1456c34effdf2bf4a96&language=en_US&ref_=as_li_ss_tl"
+      },
+      {
+        "product_name": "Apple AirTag - Item Tracker",
+        "image_file": "ads/Apple_AirTag.jpg",
+        "image_url": "https://m.media-amazon.com/images/I/71gY9bCj2BL._AC_SL1500_.jpg",
+        "metadata": {
+          "category": "Electronics",
+          "brand": "Apple",
+          "price": "$29.00",
+          "tv_channel": "Discovery",
+          "country": "US",
+          "tags": ["AirTag", "tracker", "Apple", "Find My", "Bluetooth"]
+        },
+        "affiliate_link": "https://www.amazon.com/Apple-MX532LL-A-AirTag/dp/B0CWXNS552?psc=1&linkCode=ll1&tag=matter019-20&linkId=a4f853dcf92b0442ccd0101f04d28d7a&language=en_US&ref_=as_li_ss_tl"
+      }                                   
       
             
   ]
